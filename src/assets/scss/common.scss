@@ -1,0 +1,182 @@
+@charset "UTF-8";
+//@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900);
+@import url('//fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&subset=korean');
+//@import url('//fonts.googleapis.com/css?family=Noto+Sans+CJK+KR:100,300,400,500,700,900&subset=korean');
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* titillium-web-regular - latin */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+/* using
+font-family: 'Titillium Web', sans-serif;
+font-weight: 200~900
+*/
+
+
+
+
+/* 기훈 : 사용하고자 하는 곳에 변수
+ex) $variable-name 를  넣으면됩니다.
+h1 {
+  font-family: $Lobster;
+  font-size: $font-size-root;
+  color: $color-main;
+}
+*/
+/*******************************************************************
+// 설명:프로젝트 전체에 적용되는 변수에 대해 정의함
+// 주의:컴포넌트 갯수 만큼 실행되기 때문에 변수에 대해서만 정의해야합니다.
+********************************************************************/
+// 사용자 정의 변수
+// 여기에 메인컬러,서브컬러 등의 임의 변수를 설정하면 SCSS 어디에서도 사용할 수 있습니다.
+
+
+$Lobster: 'Lobster' !important;
+$Roboto: 'Roboto' !important;
+$Titillium: 'Titillium Web' !important;
+$SCDream: 'S-CoreDream';
+
+
+$body-font-family:"Noto Sans KR";
+$title-font-family:"Noto Sans KR";
+
+$font-size-root: 14px; // default
+$font-size-title: 30px; //title font-size
+$font-size-subTitle: 18px;//sub-title-font-size
+$font-size-content-name: 16px;//sub-title-font-size
+$font-size-main_Title: 36px;//main-title-font-size
+$font-size-validation:15px;//validation-font-size
+$color-main:#333; // main font
+$color-sub:#222222; // sub font
+
+$color-gray-1:#bbbbbb;
+$color-gray-2:#777777;
+$color-gray-3:#999999;
+$color-gray-4:#444444;
+$validation-size: 14px; // validation size
+$validation-color: #ed1c24; // validation text
+$submit-btn: #2f5b82; // submit 확인 버튼
+$border-color: #e5e5e5; // border color 테두리 컬러
+$font-bold: 700; // font-weight 700 (Bold)
+$font-medium: 500; // font-weight 500 (Medium)
+$font-regular: 400; // font-weight 400 (regular)
+$placeholder-color: #c1c1c1; //placeholder 컬러
+$curator-color: #87cce8; //placeholder 컬러
+$ellipse-radius: 22.5px; // 둥근 검색 버튼 border-radius
+$list-title-size: 24px; // 리스트 타이틀 폰트 사이즈
+$count-color: #00a5c6; // 카운트 색상, 자주 사용하는 컬러
+$thumbnail-background: #f7f7f7;
+
+* {
+    // font-family:  'NanumSquare';
+  font-family: $body-font-family;
+}
+
+.font-NotoSans{
+   font-family:  'NotoSans' !important;
+   --ion-default-font :'NotoSans' !important;
+   --ion-font-family: "NotoSans" !important;
+ }
+
+.font-NotoSansKR{
+  font-family:  'Noto Sans KR' !important;
+  --ion-default-font :'Noto Sans KR' !important;
+  --ion-font-family: "Noto Sans KR" !important;
+}
+
+//.font-NotoSansCJK{
+//  font-family:  'Noto Sans CJK KR' !important;
+//  --ion-default-font :'Noto Sans CJK KR' !important;
+//  --ion-font-family: "Noto Sans CJK KR" !important;
+//}
+
+.title {
+  font-family: $title-font-family;
+  font-size: $font-size-title;
+  font-weight: 400;
+  color: #222222;
+  letter-spacing: -0.05em;
+}
+.sub_title {
+  font-family: $title-font-family;
+  font-size: $font-size-subTitle;
+  font-weight: 400;
+  color: #222222;
+  letter-spacing: -0.05em;
+}
+.content_name {
+  font-family: $title-font-family;
+  font-size: $font-size-content-name;
+  font-weight: 400;
+  color: #444444;
+  letter-spacing: -0.05em;
+}
+
+* { box-sizing: border-box; outline: 0; margin:0;padding:0; letter-spacing: -0.5px; font-family:'Noto Sans KR';}
+body {margin:0;padding:0; line-height: 1.2;  overflow: auto;font-family: "Noto Sans KR"; }
+html, h1, h2, h3, h4, h5, h6, form, fieldset, img {margin:0;padding:0;border:0; font-family: "Noto Sans KR";}
+h1, h2, h3, h4, h5, h6 {font-size:1em}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block}
+#hd ul, nav ul, #ft ul {margin:0;padding:0;list-style:none}
+legend {position:absolute;font-size:0;line-height:0;text-indent:-9999em;overflow:hidden}
+input, button {margin:0;padding:0;font-size:1em; border:none; outline:none;}
+button {cursor:pointer; border:none; outline:none;}
+// input[type=text], input[type=password], input[type=submit], input[type=image], button {border-radius:0; background:transparent; outline:none; font-size:1em;-webkit-appearance:none}
+input[type=text], input[type=submit], input[type=image], button {border-radius:0; background:transparent; outline:none; -webkit-appearance:none}
+input:-moz-read-only{cursor: default;}
+input:read-only {cursor: default;}
+textarea, select {font-size:1em;}
+textarea {border-radius:0;-webkit-appearance:none}
+select {margin:0; border:none; outline:none;}
+p {margin:0;padding:0;word-break:break-all}
+hr {display:none}
+pre {overflow-x:scroll;font-size:1.1em}
+a{display: inline-block; text-decoration: none;}
+a:visited{color: inherit !important;}
+//a:-webkit-any-link { color: #000000; text-decoration: none; }
+//a:hover, a:focus, a:active, a:visited {color:#000;/*text-decoration:underline*/ cursor: pointer; }
+ul{list-style-type: none; margin: 0; padding: 0;}
+br{color: transparent;}
+
+.bold {
+  font-weight: bold;
+}
+.hidden {overflow:hidden;}
+
+html, body { min-width: 1260px !important; }
+
+body.modal-open {
+  overflow: hidden;
+}
+body.el-loading-parent--hidden {
+  overflow: auto !important;
+}
+
+.validation {
+    font-size: $font-size-root;
+    color: $validation-color;
+    line-height: 1.4;
+}
+.pointer{
+  cursor:pointer !important;
+}
+.clear{
+    clear: both;
+}
+.dgm_wrap{
+    min-height: calc(100vh - 381px);
+}
+.note-modal-footer{
+  margin-bottom: 20px;
+}
+
+.el-date-picker{
+    &.not_now{
+        .el-picker-panel__footer{
+            .el-button--text{
+                display: none;
+            }
+        }
+    }
+}
