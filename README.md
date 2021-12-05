@@ -1,4 +1,4 @@
-# campfire_web
+# campfire_web 🚐
 
 ## Project setup
 ```
