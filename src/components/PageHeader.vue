@@ -2,12 +2,8 @@
     <div class="header">
         <!-- 헤더 -->
         <div class="header_wrap">
-        </div>
-        <div class="header_menu_border">
-            <div class="header_menu_wrap">
-                <div class="header_menu">
-                </div>
-            </div>
+          <div class="main_logo">모닥불</div>
+
         </div>
     </div>
 </template>

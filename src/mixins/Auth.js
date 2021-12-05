@@ -8,7 +8,7 @@ import EventBus from "@/utils/event-bus";
 let JwtOption = {
     signKey: '',
     storage: 'localStorage',
-    keyName: 'com.dgmonglab.election_webtoken',  //token 꼭 붙여주세요.
+    keyName: 'com.corner.campfire_webtoken',  //token 꼭 붙여주세요.
     ignoreExpiration: false,       // set true to ignore expiration date
     ignoreNotBefore: false,       // set true to ignore 'not before' date
 }

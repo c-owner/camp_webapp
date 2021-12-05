@@ -2,11 +2,11 @@ let isDev = true; // true : dev, false; prod
 
 let config = {
     dev: {
-        apiDomain: "http://electiondevapi.dgmonglab.com",
+        apiDomain: "http://localhost:8080",
         searchElaUrl: '',
     },
     prod: {
-        apiDomain: "http://electiondevapi.dgmonglab.com", // 실서버 작업되면 변경해주세요.
+        apiDomain: "http://localhost:8080",
         searchElaUrl: '',
     },
 }
