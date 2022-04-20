@@ -2,7 +2,6 @@
     <div id="app">
         <page-header></page-header>
         <div class="dgm_wrap">
-          asdf
             <router-view/>
         </div>
         <page-footer></page-footer>
