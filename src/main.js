@@ -22,7 +22,7 @@ Vue.use(API)
 Object.defineProperty(Vue.prototype, "$_", { value: _ });
 Vue.config.productionTip = false;
 Vue.use(Storage, {
-  prefix: 'com.corner.campfire_web', // default `app_`
+  prefix: 'com.cornerlab.campfire_web', // default `app_`
   drivers: ['local'], // default 'local'
 });
 

@@ -1,8 +1,6 @@
 <template>
     <div class="home">
-      <div>
-        <img src="@/assets/images/main_bg/mainbg_1.jpg" />
-      </div>
+
     </div>
 </template>
 
