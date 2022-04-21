@@ -1,14 +1,17 @@
 <template>
     <div class="home">
+      <top-main-banner-component></top-main-banner-component>
     </div>
 </template>
 
 <script>
 // @ is an alias to /src
+import TopMainBannerComponent from "@/components/home/TopMainBannerComponent";
 export default {
     name: "Home",
     mixins: [],
     components: {
+      TopMainBannerComponent
     },
     inject: [],
     provide() {

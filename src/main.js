@@ -18,7 +18,8 @@ import Storage from 'vue-web-storage';
 window.$ = require('jquery')
 Vue.use(VueMomentJs, moment);
 Vue.use(VModal);
-Vue.use(API)
+Vue.use(API);
+Vue.use(ElementUI);
 Object.defineProperty(Vue.prototype, "$_", { value: _ });
 Vue.config.productionTip = false;
 Vue.use(Storage, {
