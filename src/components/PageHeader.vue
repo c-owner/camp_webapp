@@ -1,12 +1,13 @@
 <template>
   <div class="header">
     <!-- 헤더 -->
-    <el-page-header @back="goBack">
-      <div class="header_logo">
-<!--        <img src="@/assets/logo/header_logo.png" />-->
-<!--        <img src="../assets/logo/header_logo.png" alt=""/>-->
-      </div>
-    </el-page-header>
+    <div class="header_left">
+      <img src="@/assets/logo/header_logo.png" class="header_logo" />
+    </div>
+    <div class="header_center">
+      <el-input type="text" class="search_bar in_block" />
+      <el-button type="primary" class="in_block">Search</el-button>
+    </div>
   </div>
 </template>
 
