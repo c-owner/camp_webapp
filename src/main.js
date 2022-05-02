@@ -14,12 +14,16 @@ import 'element-ui/lib/theme-chalk/index.css'
 import VModal from 'vue-js-modal';
 import 'expose-loader?$!expose-loader?jQuery!jquery'
 import Storage from 'vue-web-storage';
+import BootstrapVue from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 window.$ = require('jquery')
 Vue.use(VueMomentJs, moment);
 Vue.use(VModal);
 Vue.use(API);
 Vue.use(ElementUI);
+Vue.use(BootstrapVue);
 Object.defineProperty(Vue.prototype, "$_", { value: _ });
 Vue.config.productionTip = false;
 Vue.use(Storage, {

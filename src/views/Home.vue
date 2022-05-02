@@ -1,6 +1,9 @@
 <template>
     <div class="home">
       <top-main-banner-component></top-main-banner-component>
+      <div class="main_bg">
+        <b-button variant="primary">button</b-button>
+      </div>
     </div>
 </template>
 
