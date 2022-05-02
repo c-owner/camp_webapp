@@ -8,6 +8,15 @@
       <el-input type="text" class="search_bar in_block" />
       <el-button type="primary" class="in_block">Search</el-button>
     </div>
+    <div class="header_right">
+      <div class="header_login">
+        <div class="right_menu loginB">
+          <!-- 비로그인 상태 -->
+          <span @click="movePage('/auth')">로그인</span>
+          <span @click="movePage('/auth/select')">회원가입</span>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -45,6 +54,9 @@ export default {
   methods: {
     movePage(url) {
       this.$router.push(url);
+    },
+    isLogin() {
+      return false;
     },
     logout() {
       logout();

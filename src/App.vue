@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <page-header></page-header>
-        <div class="dgm_wrap">
+        <div class="camp_wrap">
             <router-view/>
         </div>
         <page-footer></page-footer>
