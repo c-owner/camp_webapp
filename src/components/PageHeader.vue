@@ -1,20 +1,30 @@
 <template>
-  <div class="header">
+  <div class="header-full">
     <!-- 헤더 -->
-    <div class="header_left">
-      <img src="@/assets/logo/header_logo.png" class="header_logo" />
+    <div class="gnb">
+      <ul>
+        <li><a href="/">HOME</a></li>
+        <li><a href="/">공지사항</a></li>
+        <li><a href="/">회원가입</a></li>
+        <li><a href="/">로그인</a></li>
+        <li><a href="/">고객센터</a></li>
+      </ul>
     </div>
-    <div class="header_center">
-      <el-input type="text" class="search_bar in_block" />
-      <el-button type="primary" class="in_block">Search</el-button>
-    </div>
-    <div class="header_right">
-      <div class="header_login">
-        <div class="right_menu loginB">
-          <!-- 비로그인 상태 -->
-          <span @click="movePage('/auth')">로그인</span>
-          <span @click="movePage('/auth/select')">회원가입</span>
-        </div>
+    <div class="header-wrap">
+      <div class="logo">
+        <h1><a href="/">
+          <img src="@/assets/logo/header_logo.png" class="header_logo"/>
+        </a></h1>
+      </div>
+      <div class="topmenu">
+        <ul>
+          <li id="topmenu"><a href="/">전체</a></li>
+          <li id="topmenu"><a href="/">캠핑장</a></li>
+          <li id="topmenu"><a href="/">테마검색</a></li>
+          <li id="topmenu"><a href="/">모닥불장터</a></li>
+          <li id="topmenu"><a href="/">캠핑정보</a></li>
+          <li id="topmenu"><a href="/">커뮤니티</a></li>
+        </ul>
       </div>
     </div>
   </div>

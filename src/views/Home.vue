@@ -1,20 +1,26 @@
 <template>
     <div class="home">
-      <top-main-banner-component></top-main-banner-component>
-      <div class="main_bg">
-        <b-button variant="primary">button</b-button>
+<!--      <div class="main_bg">-->
+<!--        <b-button variant="primary">button</b-button>-->
+<!--      </div>-->
+      <div id="main_fullbg">
+        <div class="main_fullbg-wrap">
+<!--      <top-main-banner-component></top-main-banner-component>-->
+          <main-search-component></main-search-component>
+        </div>
+        <div class="mainwrap"></div>
       </div>
     </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import TopMainBannerComponent from "@/components/home/TopMainBannerComponent";
+import MainSearchComponent from "@/components/home/MainSearchComponent";
 export default {
     name: "Home",
     mixins: [],
     components: {
-      TopMainBannerComponent
+      MainSearchComponent,
     },
     inject: [],
     provide() {

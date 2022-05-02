@@ -17,7 +17,16 @@ import Storage from 'vue-web-storage';
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+/* add icons to the library */
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { far } from '@fortawesome/free-regular-svg-icons';
 
+/* add font awesome icon component */
+library.add(
+  far
+)
+Vue.component('font-awesome-icon', FontAwesomeIcon);
 window.$ = require('jquery')
 Vue.use(VueMomentJs, moment);
 Vue.use(VModal);
