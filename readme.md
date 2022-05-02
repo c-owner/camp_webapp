@@ -45,7 +45,7 @@
 
 **Contributors(5)**
 
-**The project manager** : corner(master) / mamulee / Heekng / juno0-0 / songfly_s
+**The project manager** : corner(master) 
 
 
 
