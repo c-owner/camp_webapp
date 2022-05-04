@@ -6,6 +6,7 @@
     </div>
     <div class="search_form">
       <el-input type="text" @click.native="changeTitle()"
+                placeholder="검색어를 입력해주세요"
                 v-model="searchInput" class="search_input"/>
       <el-button class="search_btn" @click="movePage('/')"><font-awesome-icon icon="fa-solid fa-magnifying-glass" /></el-button>
     </div>
@@ -52,7 +53,7 @@ export default {
       return rValue;
     },
     movePage(url) {
-      return this.searchTitle = '아직 검색기능은 존재하지 않아요.  '
+      return this.searchTitle = '아직 검색기능은 존재하지 않아요.'
     },
   },
   watch: {},

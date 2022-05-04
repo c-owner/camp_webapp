@@ -56,7 +56,7 @@
         font-weight: 700;
         background-color: #25a5f0;
         color: #fff;
-        cursor: pointerg;
+        cursor: pointer;
         .fa-angle-down:before {
           content: "\f107";
         }
@@ -74,8 +74,8 @@
           box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.4);
           position: relative;
           text-align: left !important;
-
           input {
+            padding: 0 70px 0 14px;
             height: 60px;
           }
         }
