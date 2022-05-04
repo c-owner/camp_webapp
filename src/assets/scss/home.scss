@@ -56,21 +56,41 @@
         font-weight: 700;
         background-color: #25a5f0;
         color: #fff;
+        cursor: pointerg;
         .fa-angle-down:before {
           content: "\f107";
         }
       }
 
       .search_form {
-        width: 650px;
-        background: #fff;
-        height: 60px;
-        border-radius: 60px;
-        overflow: hidden;
-        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.4);
-        position: relative;
         display: inline-block;
-        text-align: left !important;
+
+        .search_input {
+          width: 650px;
+          background: #fff;
+          height: 60px;
+          border-radius: 60px;
+          overflow: hidden;
+          box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.4);
+          position: relative;
+          text-align: left !important;
+
+          input {
+            height: 60px;
+          }
+        }
+        .search_btn {
+          border-radius: 0 60px 60px 0;
+          height: 60px;
+          background-color: #cccccc;
+          border-color: #cccccc;
+          position: absolute;
+          right: 0;
+          span > svg {
+            height: 25px;
+          }
+        }
+
       }
 
     }
