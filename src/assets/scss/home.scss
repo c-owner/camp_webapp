@@ -1,12 +1,14 @@
 .home {
   width: 100%;
-  height: 1279px;
-
+  //height: 1279px;
+  min-height: 300px;
+  //height: calc(100vh - 150px);
+  height: 100vh;
 }
 
 #main_fullbg {
   background-image: url("./assets/image/main_bg_02.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 0;
   width: 100%;
