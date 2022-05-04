@@ -118,4 +118,18 @@
       z-index: -1;
     }
   }
+  .new_camp {
+    position: absolute;
+    z-index: 1;
+    bottom: 30px;
+    width: 100%;
+    h2 {
+      color: #FFFFFF;
+      font-size: 1.4rem;
+      font-weight: 500;
+      > span {
+        color: #FF4242;
+      }
+    }
+  }
 }
