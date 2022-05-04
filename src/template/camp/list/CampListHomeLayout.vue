@@ -9,7 +9,7 @@
       >
 <!--        :style="{'background-color': item.value}">-->
         <div class="slide_image">
-          @/assets/image/temp/{{ slide }}
+<!--          @/assets/image/temp/{{ slide }}-->
           <img :src="`@/assets/image/temp/`+slide" alt="" />
         </div>
       </swiper-slide>
