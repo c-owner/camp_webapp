@@ -41,9 +41,9 @@ export default {
       ],
 
       swiperOption: {
-        slidesPerView: 4,
+        slidesPerView: 5,
         // slidesPerView: "auto",
-        spaceBetween: 40,
+        spaceBetween: 100,
         autoHeight: true,
         grabCursor: true,
         autoWidth: true,
