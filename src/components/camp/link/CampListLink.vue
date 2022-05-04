@@ -17,8 +17,6 @@ export default {
       type: Array,
       default: () => []
     },
-    paginationData: {default: {page: 1, size: 10, total: 0}},
-
   },
   data() {
     return {

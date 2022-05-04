@@ -4,8 +4,14 @@
     <swiper class="contest_swiper" ref="swiper" :options="swiperOption"
             :slidesPerView="'auto'" @click="onClick"
             @slideChange="slideChange">
-      <swiper-slide class="contest_swiper_slide">
-
+      <swiper-slide class="contest_swiper_slide"
+                    v-for="(slide, s_idx) in swiperImg"
+      >
+<!--        :style="{'background-color': item.value}">-->
+        <div class="slide_image">
+          @/assets/image/temp/{{ slide }}
+          <img :src="`@/assets/image/temp/`+slide" alt="" />
+        </div>
       </swiper-slide>
     </swiper>
   </div>
@@ -13,11 +19,15 @@
 
 <script>
 import util from "@/mixins/util";
+import { Swiper, SwiperSlide } from "vue-awesome-swiper";
+import 'swiper/css/swiper.css';
 
 export default {
   name: "CampListHomeLayout",
   mixins: [],
-  components: {},
+  components: {
+    Swiper, SwiperSlide
+  },
   inject: [],
   provide() {
     return {}
@@ -25,6 +35,11 @@ export default {
   props: {},
   data() {
     return {
+      swiperImg: [
+        'swiper1.jpg', 'swiper2.jpg', 'swiper3.jpg',
+        'swiper4.jpg', 'swiper5.jpg', 'swiper6.jpg',
+      ],
+
       swiperOption: {
         slidesPerView: 4,
         // slidesPerView: "auto",
