@@ -10,7 +10,6 @@
         </div>
         <div class="mainwrap"></div>
         <div class="new_camp">
-          <camp-list-component :campType="`campHome`"></camp-list-component>
         </div>
 
       </div>
@@ -20,12 +19,10 @@
 <script>
 // @ is an alias to /src
 import MainSearchComponent from "@/components/home/MainSearchComponent";
-import CampListComponent from "@/components/camp/CampListComponent";
 export default {
     name: "Home",
     mixins: [],
     components: {
-      CampListComponent,
       MainSearchComponent,
     },
     inject: [],
