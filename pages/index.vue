@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="default-index">
     <!--      <div class="main_bg">-->
     <!--        <b-button variant="primary">button</b-button>-->
     <!--      </div>-->
@@ -19,5 +19,6 @@
 <script>
 export default {
   name: 'IndexPage',
+  layout: 'default',
 }
 </script>
