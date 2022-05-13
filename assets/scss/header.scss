@@ -3,26 +3,24 @@
   width: 100%;
   padding: 10px 30px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   position: fixed;
   height: 120px;
   z-index: 13;
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    display: inline-block;
+    z-index: 1;
+    img {
+      width: 172px;
+    }
+  }
 
   .gnb {
     height: 40px;
-    position: absolute;
-    z-index: 0;
-    right: 20px;
-    top: 10px;
     width: 100%;
-    z-index: 12;
-
     ul {
-      position: absolute;
-      right: 20px;
-      top: 5px;
       font-size: 12px;
       padding: 0;
       margin: 0;
@@ -44,30 +42,14 @@
 
   }
 
+
   .header-wrap {
-    width: 1200px;
-    position: absolute;
-    left: 50%;
-    margin-left: -600px;
-    top: 50px;
-
-    .logo {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
-
-      h1 {
-        padding: 0;
-        margin: 0;
-
-        img {
-          width: 172px;
-        }
-      }
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .topmenu {
+      display: inline-block;
       text-align: center;
       ul {
         list-style: none;

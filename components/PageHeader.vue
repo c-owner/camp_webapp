@@ -1,6 +1,12 @@
 <template>
   <div class="header-full">
     <!-- 헤더 -->
+    <NuxtLink
+      to="/"
+      class="logo"
+    >
+      <img src="@/assets/logo/header_logo.png" class="header_logo"/>
+    </NuxtLink>
     <div class="gnb">
       <ul>
         <li><a href="/">HOME</a></li>
@@ -11,11 +17,6 @@
       </ul>
     </div>
     <div class="header-wrap">
-      <div class="logo">
-        <h1><a href="/">
-          <img src="@/assets/logo/header_logo.png" class="header_logo"/>
-        </a></h1>
-      </div>
       <div class="topmenu">
         <ul>
           <li id="topmenu"><a href="/">전체</a></li>
@@ -31,9 +32,7 @@
 </template>
 
 <script>
-import {logout} from "@/mixins/Auth";
 import {mapState} from "vuex";
-import util from "@/plugins/util";
 import EventBus from "@/utils/event-bus";
 
 export default {

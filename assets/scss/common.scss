@@ -686,7 +686,7 @@ br{color: transparent;}
 .hidden {overflow:hidden;}
 
 html, body { min-width: 1260px !important; }
-
+html {overflow: auto !important; }
 body{
   -ms-overflow-style: none ;
   padding: 0 !important;

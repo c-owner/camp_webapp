@@ -1,5 +1,6 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  target: 'static',
 
   head: {
     title: 'front_campfire_web',
@@ -8,7 +9,7 @@ export default {
     },
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no, viewport-fit-cover' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
@@ -27,7 +28,6 @@ export default {
   plugins: [
     '@/plugins/element-ui',
     '@/plugins/fontawesome.js',
-    '@/plugins/util.js',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
