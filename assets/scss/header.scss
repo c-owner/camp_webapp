@@ -6,8 +6,6 @@
   position: fixed;
   height: 120px;
   z-index: 13;
-  display: flex;
-  justify-content: space-between;
 
   .logo {
     display: inline-block;
@@ -18,9 +16,11 @@
   }
 
   .gnb {
-    height: 40px;
-    width: 100%;
+    width: calc(100% - 200px);
+    height: 100%;
+    display: inline-block;
     ul {
+      text-align: right;
       font-size: 12px;
       padding: 0;
       margin: 0;
@@ -44,10 +44,8 @@
 
 
   .header-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    width: 100%;
+    text-align: center;
     .topmenu {
       display: inline-block;
       text-align: center;

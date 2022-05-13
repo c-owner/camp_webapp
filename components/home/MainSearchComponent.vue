@@ -8,7 +8,9 @@
       <el-input type="text" @click.native="changeTitle()"
                 placeholder="검색어를 입력해주세요"
                 v-model="searchInput" class="search_input"/>
-      <el-button class="search_btn" @click="movePage('/')"><font-awesome-icon icon="fa-solid fa-magnifying-glass" /></el-button>
+      <el-button class="search_btn" @click="movePage('/')">
+        <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+      </el-button>
     </div>
   </div>
 </template>

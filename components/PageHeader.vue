@@ -15,17 +15,17 @@
         <li><a href="/">로그인</a></li>
         <li><a href="/">고객센터</a></li>
       </ul>
-    </div>
-    <div class="header-wrap">
-      <div class="topmenu">
-        <ul>
-          <li id="topmenu"><a href="/">전체</a></li>
-          <li id="topmenu"><a href="/">캠핑장</a></li>
-          <li id="topmenu"><a href="/">테마검색</a></li>
-          <li id="topmenu"><a href="/">모닥불장터</a></li>
-          <li id="topmenu"><a href="/">캠핑정보</a></li>
-          <li id="topmenu"><a href="/">커뮤니티</a></li>
-        </ul>
+      <div class="header-wrap">
+        <div class="topmenu">
+          <ul>
+            <li id="topmenu"><a href="/">전체</a></li>
+            <li id="topmenu"><a href="/">캠핑장</a></li>
+            <li id="topmenu"><a href="/">테마검색</a></li>
+            <li id="topmenu"><a href="/">모닥불장터</a></li>
+            <li id="topmenu"><a href="/">캠핑정보</a></li>
+            <li id="topmenu"><a href="/">커뮤니티</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
