@@ -1,11 +1,10 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
-  ssr: false,
 
   head: {
     title: 'front_campfire_web',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'ko'
     },
     meta: [
       { charset: 'utf-8' },
@@ -20,13 +19,15 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    'element-ui/lib/theme-chalk/index.css'
+    'element-ui/lib/theme-chalk/index.css',
+    '~assets/scss/index.scss',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '@/plugins/element-ui',
     '@/plugins/fontawesome.js',
+    '@/plugins/util.js',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -35,7 +36,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     '@nuxtjs/vuetify',
-    ['@nuxtjs/vuetify', {}]
+    // ['@nuxtjs/vuetify', {}],
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules

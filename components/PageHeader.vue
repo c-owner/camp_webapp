@@ -33,7 +33,7 @@
 <script>
 import {logout} from "@/mixins/Auth";
 import {mapState} from "vuex";
-import util from "@/mixins/util";
+import util from "@/plugins/util";
 import EventBus from "@/utils/event-bus";
 
 export default {

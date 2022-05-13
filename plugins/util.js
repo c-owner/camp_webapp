@@ -2623,6 +2623,7 @@ util.USE_NATIVE_JSON = false;
 
 util.JSON = new function() {
     var me = this;
+
     var hasNative = window.JSON && JSON.toString() === '[object JSON]';
     var useHasOwn = !!{}.hasOwnProperty;
     var pad = function(n) {
