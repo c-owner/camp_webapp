@@ -9,21 +9,31 @@
     </NuxtLink>
     <div class="gnb">
       <ul>
-        <li><a href="/">HOME</a></li>
-        <li><a href="/">공지사항</a></li>
-        <li><a href="/">회원가입</a></li>
-        <li><a href="/">로그인</a></li>
-        <li><a href="/">고객센터</a></li>
+        <li>
+          <NuxtLink to="/">HOME</NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/info/notice">공지사항</NuxtLink>
+        </li>
+        <li><NuxtLink to="/auth">회원가입</NuxtLink></li>
+        <li><NuxtLink to="/auth">로그인</NuxtLink></li>
+        <li><NuxtLink to="/info/center">고객센터</NuxtLink></li>
       </ul>
       <div class="header-wrap">
         <div class="topmenu">
           <ul>
-            <li id="topmenu"><a href="/">전체</a></li>
-            <li id="topmenu"><a href="/">캠핑장</a></li>
-            <li id="topmenu"><a href="/">테마검색</a></li>
-            <li id="topmenu"><a href="/">모닥불장터</a></li>
-            <li id="topmenu"><a href="/">캠핑정보</a></li>
-            <li id="topmenu"><a href="/">커뮤니티</a></li>
+            <li id="topmenu">
+              <NuxtLink to="/">전체</NuxtLink>
+            </li>
+            <li id="topmenu">
+              <NuxtLink to="/">캠핑장</NuxtLink>
+            </li>
+            <li id="topmenu">
+              <NuxtLink to="/">테마검색</NuxtLink>
+            </li>
+            <li id="topmenu"><NuxtLink to="/">모닥불장터</NuxtLink></li>
+            <li id="topmenu"><NuxtLink to="/">캠핑정보</NuxtLink></li>
+            <li id="topmenu"><NuxtLink to="/">커뮤니티</NuxtLink></li>
           </ul>
         </div>
       </div>

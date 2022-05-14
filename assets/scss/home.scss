@@ -1,6 +1,12 @@
 #main-wrapper {
-  height: auto;
   min-height: 100%;
+  width: 100%;
+  height: auto;
+}
+
+#default-wrap {
+  height: calc(100vh - 229px);
+  padding-top: 120px;
 }
 
 .home {
