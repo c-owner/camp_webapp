@@ -9,9 +9,11 @@
         <home-main-search-component></home-main-search-component>
       </div>
       <div class="mainwrap"></div>
-      <div class="new_camp">
+    </div>
+    <div id="content-wrap">
+      <div class="content" ref="messagesContainer">
+        aaa
       </div>
-
     </div>
   </div>
 </template>

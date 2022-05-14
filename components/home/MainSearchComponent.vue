@@ -1,15 +1,15 @@
 <template>
   <div class="main-search d-block">
     <h2>{{ searchTitle }}</h2>
-    <div class="area_select" @click="movePage('/')">
-      지역별 &nbsp;&nbsp; <font-awesome-icon icon="fa-solid fa-arrow-down" />
+    <div class="area_select" @click="moveScroll()">
+      지역별 &nbsp;&nbsp;
     </div>
     <div class="search_form">
       <el-input type="text" @click.native="changeTitle()"
-                placeholder="검색어를 입력해주세요"
+                placeholder="캠핑장을 검색해주세요"
                 v-model="searchInput" class="search_input"/>
       <el-button class="search_btn" @click="movePage('/')">
-        <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+        <i class="ph-magnifying-glass-fill search_icon"></i>
       </el-button>
     </div>
   </div>
@@ -57,6 +57,11 @@ export default {
     movePage(url) {
       return this.searchTitle = '아직 검색기능은 존재하지 않아요😅'
     },
+    moveScroll() {
+      $('html, body').stop().animate( { scrollTop : 1500 } )
+      // window.scrollTo(0,1500);
+    },
+
   },
   watch: {},
 }
