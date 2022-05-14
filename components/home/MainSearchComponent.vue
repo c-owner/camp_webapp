@@ -45,7 +45,7 @@ export default {
   methods: {
     changeTitle() {
       let titleArr = [
-        '오늘은 어디로 가볼까?', '검색을 해볼까요?', '좋은 곳은 많아요.', '오늘도 좋은 하루 되세요.'
+        '오늘은 어디로 가볼까?🤔', '검색을 해볼까요?😎', '좋은 곳은 많아요🤩', '오늘도 좋은 하루 되세요💪'
       ]
       return this.searchTitle = this.randArr(titleArr);
     },
@@ -55,7 +55,7 @@ export default {
       return rValue;
     },
     movePage(url) {
-      return this.searchTitle = '아직 검색기능은 존재하지 않아요.'
+      return this.searchTitle = '아직 검색기능은 존재하지 않아요😅'
     },
   },
   watch: {},

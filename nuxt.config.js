@@ -14,9 +14,14 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+
+    ],
+    script: [
+      {type:'text/javascript', src:'https://unpkg.com/phosphor-icons'},
+    ],
   },
+
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
