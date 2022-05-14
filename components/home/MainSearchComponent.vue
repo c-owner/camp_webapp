@@ -6,7 +6,7 @@
     </div>
     <div class="search_form">
       <el-input type="text" @click.native="changeTitle()"
-                placeholder="캠핑장을 검색해주세요"
+                placeholder="캠핑장을 검색해주세요" id="search_input"
                 v-model="searchInput" class="search_input"/>
       <el-button class="search_btn" @click="movePage('/')">
         <i class="ph-magnifying-glass-fill search_icon"></i>
@@ -27,7 +27,7 @@ export default {
   props: {},
   data() {
     return {
-      searchTitle: '오늘은 어디로 가볼까?',
+      searchTitle: '우리..같이 캠핑갈래요?👉👈',
       searchInput: '',
     }
   },
@@ -43,9 +43,11 @@ export default {
   },
   computed: {},
   methods: {
+    focus() {
+    },
     changeTitle() {
       let titleArr = [
-        '오늘은 어디로 가볼까?🤔', '검색을 해볼까요?😎', '좋은 곳은 많아요🤩', '오늘도 좋은 하루 되세요💪'
+        '오늘은 어디로 가볼까?🤔', '검색을 해볼까요?😎', '좋은 곳은 많아요🤩', '오늘도 좋은 하루 되세요💪', '우리..같이 캠핑갈래요?👉👈'
       ]
       return this.searchTitle = this.randArr(titleArr);
     },
@@ -58,10 +60,9 @@ export default {
       return this.searchTitle = '아직 검색기능은 존재하지 않아요😅'
     },
     moveScroll() {
-      $('html, body').stop().animate( { scrollTop : 1500 } )
-      // window.scrollTo(0,1500);
+      // $('html, body').stop().animate( { scrollTop : 1500 } )
+      window.scrollTo(0,1500);
     },
-
   },
   watch: {},
 }
