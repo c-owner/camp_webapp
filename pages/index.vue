@@ -5,10 +5,11 @@
     <!--      </div>-->
     <div id="main_fullbg">
       <div class="main_fullbg-wrap">
+      <div class="mainwrap"></div>
         <!--      <top-main-banner-component></top-main-banner-component>-->
         <home-main-search-component></home-main-search-component>
+<!--        <Chart />-->
       </div>
-      <div class="mainwrap"></div>
     </div>
     <div id="content-wrap">
       <div class="content" ref="messagesContainer">
