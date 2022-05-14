@@ -1,6 +1,7 @@
 <template>
     <div id="main-wrapper">
       <Nuxt />
+      <Dialog ref="Dialog"></Dialog>
     </div>
 </template>
 <script>

@@ -18,8 +18,8 @@ export default {
 
     ],
     script: [
+      {type:'text/javascript', src:'/jquery-3.6.0.min.js'},
       {type:'text/javascript', src:'https://unpkg.com/phosphor-icons'},
-      {src: "https://code.jquery.com/jquery-3.3.1.slim.min.js",type: "text/javascript"},
     ],
   },
 
@@ -34,6 +34,8 @@ export default {
   plugins: [
     '@/plugins/element-ui',
     '@/plugins/fontawesome.js',
+    '~plugins/swal.js',
+    '~plugins/alert.js',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -47,10 +49,19 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/toast',
   ],
-
+  toast: {
+    position: 'bottom-center',
+    duration: 3000,
+    className:'toast-items',
+    containerClass:'toast-container',
+    theme: "outline",
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: [/^element-ui/],
-  }
+  },
+
+  loading: '~/components/LoadingBar.vue'
 }
