@@ -1,18 +1,16 @@
 <template>
   <div class="default-index">
-    <!--      <div class="main_bg">-->
-    <!--        <b-button variant="primary">button</b-button>-->
-    <!--      </div>-->
     <div id="main_fullbg">
       <div class="main_fullbg-wrap">
-        <!--      <top-main-banner-component></top-main-banner-component>-->
+      <div class="mainwrap"></div>
         <home-main-search-component></home-main-search-component>
       </div>
-      <div class="mainwrap"></div>
     </div>
     <div id="content-wrap">
       <div class="content" ref="messagesContainer">
-        aaa
+        <div class="service_message">
+          페이지 준비중입니다.
+        </div>
       </div>
     </div>
   </div>
@@ -21,6 +19,6 @@
 <script>
 export default {
   name: 'IndexPage',
-  layout: 'default',
+  layout: 'HeaderFooter',
 }
 </script>
