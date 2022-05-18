@@ -48,6 +48,6 @@ SSR 방식을 사용하여 구상중인 기능들을 개발해볼 예정이다.
 **Contributors(1)**
 
 **The project manager** : corner(master) 
-
+같이하실 분 구함~ 
 
 
