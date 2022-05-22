@@ -1,34 +1,26 @@
 <template>
-  <div class="default-index">
-    <div id="main_fullbg">
-      <div class="main_fullbg-wrap">
-      <video
-        id="recommendations-player"
-        muted
-        autoplay
-        loop
-        style="width: 100%; height: 100%;"
-        class="mainwrap cld-video-player cld-video-player-skin-dark w-2/3 h-96 mx-auto"
-      ></video>
-        <div class="mainwrap"></div>
-        <home-main-search-component></home-main-search-component>
-      </div>
-    </div>
-<!--    <video-player src="@/assets/videos/fireplace_bg.mp4"></video-player>-->
-    <div id="content-wrap">
-      <div class="content" ref="messagesContainer">
-        <div class="service_message">
-          페이지 준비중입니다.....
-        </div>
-      </div>
-    </div>
+  <div>
+    <h1 class="my-10 block text-center leading-8 font-extrabold tracking-tight text-gray-600 text-2xl">
+      How to display video recommendations in Nuxt.Js
+    </h1>
 
+    <video
+      id="recommendations-player"
+      controls
+      muted
+      class="cld-video-player cld-video-player-skin-dark w-2/3 h-96 mx-auto"
+    >
+    </video>
+
+    <div class="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto leading-10 w-2/3 mx-auto">
+      The first video will display other videos as recommendations once play ends.
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage',
+  name: 'Test',
   data(){
     return {
       cld:null,
@@ -40,7 +32,7 @@ export default {
         description:'Street at night with traffic and pedestrians'
       },
       source2: {
-        publicId: "nuxtjs-video-recommendations/nightsky_bg_qt5bpq",
+        publicId: "nuxtjs-video-recommendations/nightsky_bg_qt5bpq\n",
         title:'Cookie',
         subtitle:'Decorating a Cupcake with Gingerbread Cookie',
         description:'Decorating a Cupcake with Gingerbread Cookie'
@@ -70,6 +62,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-</style>
