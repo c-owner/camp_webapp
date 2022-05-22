@@ -6,7 +6,7 @@
 
 export default (context, inject, app) => {
 
-	const now_alert = {
+	const camp_alert = {
 		alert(options){
 
 			if(!options.title)	options.title = '';
@@ -62,5 +62,5 @@ export default (context, inject, app) => {
 		}
 	}
 
-	inject('al', now_alert)
+	inject('al', camp_alert)
 }

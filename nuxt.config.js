@@ -35,7 +35,7 @@ export default {
     '@/plugins/element-ui',
     '@/plugins/fontawesome.js',
     '~plugins/swal.js',
-    '~plugins/alert.js',
+    '~plugins/alert.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -43,7 +43,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    '@nuxtjs/vuetify',
+    '@nuxtjs/vuetify'
     // ['@nuxtjs/vuetify', {}],
   ],
 
@@ -60,7 +60,7 @@ export default {
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    transpile: [/^element-ui/],
+    transpile: [/^element-ui/]
   },
 
   loading: '~/components/LoadingBar.vue'

@@ -2,7 +2,7 @@
   <div class="default-index">
     <div id="main_fullbg">
       <div class="main_fullbg-wrap">
-      <div class="mainwrap"></div>
+        <div class="mainwrap"></div>
         <home-main-search-component></home-main-search-component>
       </div>
     </div>
@@ -20,5 +20,6 @@
 export default {
   name: 'IndexPage',
   layout: 'HeaderFooter',
+
 }
 </script>
