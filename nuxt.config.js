@@ -15,11 +15,13 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-
+      { rel:  'stylesheet', href:  'https://unpkg.com/cloudinary-video-player@1.5.9/dist/cld-video-player.min.css' }
     ],
     script: [
       {type:'text/javascript', src:'/jquery-3.6.0.min.js'},
       {type:'text/javascript', src:'https://unpkg.com/phosphor-icons'},
+      { src:  'https://unpkg.com/cloudinary-core@latest/cloudinary-core-shrinkwrap.min.js'  },
+      { src:  'https://unpkg.com/cloudinary-video-player@1.5.9/dist/cld-video-player.min.js'  }
     ],
   },
 
