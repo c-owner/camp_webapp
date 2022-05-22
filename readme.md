@@ -7,12 +7,7 @@
 
 <img width="1384" alt="image" src="https://user-images.githubusercontent.com/68332735/169677038-aaf03e94-2384-42fb-8101-8d56174373a8.png">
 
-
-
-
-
-<img src="https://images.unsplash.com/photo-1492648272180-61e45a8d98a7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" weight="700px" height="500px">
-
+ 
 
 
 # Info
