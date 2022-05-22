@@ -9,7 +9,7 @@
     <div id="content-wrap">
       <div class="content" ref="messagesContainer">
         <div class="service_message">
-          페이지 준비중입니다.
+          페이지 준비중입니다.....
         </div>
       </div>
     </div>
