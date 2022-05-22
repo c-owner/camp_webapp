@@ -54,7 +54,7 @@ export default {
     ];
 
     this.cld = cloudinary.Cloudinary.new({
-      cloud_name: process.env.NUXT_ENV_CLOUDINARY_CLOUD_NAME || dtdnarsy1,
+      cloud_name: process.env.NUXT_ENV_CLOUDINARY_CLOUD_NAME || "dtdnarsy1",
       secure: true,
       transformation: {crop: 'limit', width: 300, height:900}
     });
