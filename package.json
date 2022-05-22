@@ -2,6 +2,12 @@
   "name": "front_campfire_web",
   "version": "1.0.0",
   "private": true,
+  "builds": [
+    {
+      "src": "nuxt.config.js",
+      "use": "@nuxtjs/vercel-builder"
+    }
+  ],
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
