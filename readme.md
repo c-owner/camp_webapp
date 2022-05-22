@@ -5,8 +5,7 @@
 
 
 
-<img width="1384" alt="image" src="https://user-images.githubusercontent.com/68332735/169677038-aaf03e94-2384-42fb-8101-8d56174373a8.png">
-
+![image](https://user-images.githubusercontent.com/68332735/169678602-18986fd2-5565-432f-9d76-bbc0f135979e.png)
  
 
 
