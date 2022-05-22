@@ -15,7 +15,7 @@ export default {
   },
   created() {
     this.authCheckFunc();
-    this.$al.alert({
+    this.$camp_alert.alert({
       title: '알림',
       message: '로그인 페이지로 이동합니다.',
       callback: () => {
@@ -28,7 +28,7 @@ export default {
   methods: {
     authCheckFunc() {
       if (!this.authCheck) {
-        this.$al.alert({
+        this.$camp_alert.alert({
           title: '알림',
           message: '로그인 페이지로 이동합니다.',
           callback: () => {

@@ -19,7 +19,5 @@
 <script>
 export default {
   name: 'IndexPage',
-  layout: 'HeaderFooter',
-
 }
 </script>

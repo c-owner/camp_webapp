@@ -62,5 +62,5 @@ export default (context, inject, app) => {
 		}
 	}
 
-	inject('al', camp_alert)
+	inject('camp_alert', camp_alert)
 }
