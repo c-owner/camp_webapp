@@ -15,8 +15,8 @@
         <li>
           <NuxtLink to="/info/notice">공지사항</NuxtLink>
         </li>
-        <li><NuxtLink to="/auth">회원가입</NuxtLink></li>
-        <li><NuxtLink to="/auth">로그인</NuxtLink></li>
+        <li><NuxtLink to="/auth/register">회원가입</NuxtLink></li>
+        <li><NuxtLink to="/auth/login">로그인</NuxtLink></li>
         <li><NuxtLink to="/info/center">고객센터</NuxtLink></li>
       </ul>
       <div class="header-wrap">

@@ -11,7 +11,7 @@
     <div class="footer_top_back">
       <ul class="footer_menu_group">
         <li style="margin: 0">
-          <NuxtLink to="/">
+          <NuxtLink to="/info">
             소개
           </NuxtLink>
         </li>
@@ -21,7 +21,7 @@
           </NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/">
+          <NuxtLink to="/info">
             고객센터
           </NuxtLink>
         </li>
