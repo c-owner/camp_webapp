@@ -1371,3 +1371,10 @@ a {
   margin: 0 auto;
   text-align: center;
 }
+
+.auth-input {
+  input {
+    border-radius: 5px;
+    box-shadow: #8859ff 0px 0px 0px 1px inset;
+  }
+}

@@ -3,7 +3,7 @@ export default {
   target: 'static',
 
   head: {
-    title: 'front_campfire_web',
+    title: '모닥불',
     htmlAttrs: {
       lang: 'ko'
     },
@@ -45,10 +45,10 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    '@nuxtjs/vuetify'
-    // ['@nuxtjs/vuetify', {}],
-  ],
+    // Simple usage
 
+    // With options
+  ],
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/toast',
