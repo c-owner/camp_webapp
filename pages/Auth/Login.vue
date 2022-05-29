@@ -1,12 +1,12 @@
 <template>
   <div>
-
+로그인 폼
   </div>
 </template>
 
 <script>
 export default {
-  name: "Login",
+  name: "LoginPage",
 
 }
 </script>
