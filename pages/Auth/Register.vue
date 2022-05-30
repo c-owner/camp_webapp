@@ -12,9 +12,14 @@
                         {{ validation.firstError('name') }}
                     </div>
                 </div>
-                <div class="form-group">
+                <div class="form-group p-relative">
                     <label for="email">사용하실 이메일 (로그인 이메일) </label>
-                    <el-input type="email" class="auth-input" id="email" v-model="email" placeholder="email@email.com"/>
+                    <el-input type="email" class="auth-input"
+                              @input="setData('email',email)"
+                              id="email" v-model="email" placeholder="email@email.com"/>
+                    <div class="validation" v-if="validation.hasError('email')">
+                        {{ validation.firstError('email') }}
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="password">비밀번호</label>

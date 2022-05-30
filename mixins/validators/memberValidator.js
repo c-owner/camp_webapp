@@ -18,20 +18,12 @@ export default {
             emailChk: '',
             emailCheckDuplicate: false,
             emailDuplicate: false,
-            referrerId: '',
-            referrerIdChk: false,
 
+            // login
             id: '',
             password: '',
 
             sns1: '',
-            sns2: '',
-            sns3: '',
-            introduce: '',
-            profileFile: [],
-            thumbnailFile: [],
-            backgroundFile: [],
-            portfolio: '',
         }
     },
     computed: {},
@@ -47,29 +39,29 @@ export default {
           return Validator.value(value)
               .custom(() => {
                   if (this.nickDuplicate) {
-                      return this.$t('nickErrorMsg1');
+                      return '중복된 닉네임입니다.';
                   }
               })
         },
         email: function (value) {
             return Validator.value(value)
-                .required(this.$t('require_email'))
-                .email(this.$t('require_email'))
+                .required('이메일을 입력해주세요.')
+                .email('이메일 형식에 맞게 입력해주세요.')
         },
         emailChk: function (value) { // 인증번호
             return Validator.value(value)
-                .required(this.$t('confirm_num'))
+                .required('인증번호를 입력해주세요.')
         },
         emailCheckDuplicate: function (value) {
             return Validator.value(value)
                 .custom(() => {
                     if(this.emailDuplicate) {
-                        return this.$t('emailErrorMsg');
+                        return '중복된 이메일입니다.';
                     }
                 })
         },
         pwd: function (value) {
-            let msg = this.$t('pwdErrorMsg2');
+            let msg = "비밀번호는 8~20자 이내로 대소문자, 숫자, 특수문자를 포함해서 입력해주세요.";
             return Validator.value(value)
                 .required(msg)
                 .minLength(8, msg)
@@ -80,7 +72,7 @@ export default {
           return Validator.value(value)
               .custom(() => {
                   if (value != this.pwd) {
-                    return this.$t('pwdErrorMsg');
+                    return '비밀번호가 일치하지 않습니다.';
 
                   }
               })
@@ -88,64 +80,21 @@ export default {
         oldPwd: function (value) {
           return Validator.value(value)
         },
-        referrerId: function (value) {
-            return Validator.value(value)
-                .required(this.$t('require_email'))
-                .email(this.$t('require_email'))
-        },
-        referrerIdChk: function (value) {
-            return Validator.value(value)
-                .custom(() => {
-                    if (this.referrerId === '') {
-                        this.referrerIdChk = true;
-                        return '';
-                    } else {
-                        if (!this.referrerIdChk) {
-                            return this.$t('referrerErrorMsg');
-                        } else {
-                            return '';
-                        }
-                    }
-                })
-        },
         // 로그인
         id: function (value) {
-            let msg = this.$t('write_id_msg');
+            let msg = "아이디를 입력해주세요.";
             return Validator.value(value)
                     .required(msg)
         },
         password: function (value) {
-            let msg = this.$t('write_pwd');
+            let msg = "비밀번호를 입력해주세요.";
             return Validator.value(value)
                     .required(msg)
         },
 
         sns1: function (value) {
             return Validator.value(value)
-                .url(this.$t('sns_url_format_err1'))
-        },
-        sns2: function (value) {
-            return Validator.value(value)
-                .url(this.$t('sns_url_format_err1'))
-        },
-        sns3: function (value) {
-            return Validator.value(value)
-                .url(this.$t('sns_url_format_err1'))
-        },
-        profileFile: function (value) {
-            return Validator.value(value)
-        },
-        thumbnailFile: function (value) {
-            return Validator.value(value)
-        },
-        backgroundFile: function (value) {
-            return Validator.value(value)
-        },
-        introduce: function (value) {
-            return Validator.value(value)
-        },
-        portfolio: function (value) {
-            return Validator.value(value)
+                .url('유효한 인증코드를 입력해주세요.')
         },
     },
 
@@ -210,36 +159,5 @@ export default {
             }
             this.$validate(['nickCheckDuplicate'])
         },
-        referrerIdCheck() {
-            this.$validate(['referrerId']).then(success => {
-                if (!success) {
-                    return false;
-                }
-                let params = {
-                    mid: this.referrerId,
-                };
-                try {
-                    this.$api.$member.getList(params).then(res => res.Data.Result).then(res => {
-                        let type = res.Info.type;
-                        if (res.List.length === 0 )  {
-                            type = null;
-                        }
-                         this.checkRefferAfter(type);
-                    })
-                } catch (e) {
-                    console.log(e);
-                }
-            })
-        },
-        checkRefferAfter(type) {
-            if (type === 1) {
-                this.referrerIdChk = true;
-            } else {
-                this.referrerIdChk = false;
-            }
-            this.$validate(['referrerIdChk'])
-        },
-
-
     },
 }
