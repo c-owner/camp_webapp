@@ -794,9 +794,12 @@ body.el-loading-parent--hidden {
 
 }
 .validation{
-  font-size:14px;
-  line-height:30px;
-  color:#8d0404;
+    font-size: 12px;
+    color: #960f0f;
+    font-weight: 400;
+    display: block;
+    position: absolute;
+    bottom: 0;
 }
 .block{
   display: block !important;
@@ -1378,3 +1381,4 @@ a {
     box-shadow: #8859ff 0px 0px 0px 1px inset;
   }
 }
+

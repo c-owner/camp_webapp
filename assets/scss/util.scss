@@ -703,9 +703,10 @@
   .pl55-xs{padding-left:55px !important}
   .pl60-xs{padding-left:60px !important}
 }
-.pAbsolute{
-    position: absolute;
-}
+.p-relative {position:relative;}
+.p-absoulte {position:absolute;}
+.p-fixed {position:fixed;}
+
 .w100p{
     width: 100%;
 }
