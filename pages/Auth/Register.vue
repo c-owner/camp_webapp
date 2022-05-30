@@ -22,12 +22,27 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="password">비밀번호</label>
-                    <el-input type="password" class="auth-input" id="password" loading v-model="password"
-                              placeholder="비밀번호 입력"/>
-                    <label for="password_confirm">비밀번호 확인</label>
-                    <el-input type="password" class="auth-input" id="password_confirm" v-model="password_confirm"
-                              placeholder="비밀번호 확인"/>
+                    <div class="p-relative">
+
+                        <label for="password">비밀번호</label>
+                        <el-input type="password" class="auth-input" id="password" loading
+                                  @input="setData('pwd',pwd)"
+                                  v-model="pwd"
+                                  placeholder="비밀번호 입력"/>
+                        <div class="validation" v-if="validation.hasError('pwd')">
+                            {{ validation.firstError('pwd') }}
+                        </div>
+                    </div>
+                    <div class="p-relative">
+                        <label for="password_confirm">비밀번호 확인</label>
+                        <el-input type="password" class="auth-input" id="password_confirm"
+                                  v-model="pwdChk"
+                                  placeholder="비밀번호 확인"
+                                  @input="setData('pwdChk', pwdChk)"/>
+                        <div class="validation" v-if="validation.hasError('pwdChk')">
+                            {{ validation.firstError('pwdChk') }}
+                        </div>
+                    </div>
                 </div>
                 <el-button type="submit" class="btn btn-primary">회원가입</el-button>
                 <el-button class="btn btn-primary" @click="$router.replace('/')">취소</el-button>
@@ -46,8 +61,8 @@ export default {
         return {
             name: "",
             email: "",
-            password: "",
-            password_confirm: ""
+            pwd: "",
+            pwdChk: ""
         }
     },
     methods: {
