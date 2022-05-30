@@ -37,7 +37,8 @@ export default {
     '@/plugins/element-ui',
     '@/plugins/fontawesome.js',
     '~plugins/swal.js',
-    '~plugins/alert.js'
+    '~plugins/alert.js',
+      '~api/index.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

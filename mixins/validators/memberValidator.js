@@ -8,7 +8,7 @@ export default {
     data() {
         return {
             // register에서 사용할 data 선언
-            nick: '',
+            nickname: '',
             nickCheckDuplicate: false,
             nickDuplicate: false,
             oldPwd:'',
@@ -18,6 +18,8 @@ export default {
             emailChk: '',
             emailCheckDuplicate: false,
             emailDuplicate: false,
+            address: '',
+            tags: [],
 
             // login
             id: '',
@@ -28,7 +30,7 @@ export default {
     },
     computed: {},
     validators: {
-        name: function (value) {
+        nickname: function (value) {
             let msg = "닉네임은 2~10자 이내로 입력해주세요.";
             return Validator.value(value)
                 .required(msg)
@@ -79,6 +81,14 @@ export default {
         },
         oldPwd: function (value) {
           return Validator.value(value)
+        },
+        address: function (value) {
+            return Validator.value(value)
+                .custom(() => {
+                    if (value.length < 1) {
+                        return '주소를 입력해주세요.';
+                    }
+                })
         },
         // 로그인
         id: function (value) {
