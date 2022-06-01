@@ -87,6 +87,7 @@ import memberValidator from "@/mixins/validators/memberValidator";
 
 export default {
     name: "RegisterPage",
+    transition: 'fade',
     mixins: [memberValidator],
     data() {
         return {

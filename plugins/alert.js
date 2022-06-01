@@ -33,7 +33,6 @@ Vue.prototype.$alert = {
                 customClass: params.classname ? params.classname : 'campfire_confirm',
                 showCloseButton: false,
                 reverseButtons: true,
-                //check면 chk_alert 클래스를 주세요.
             }).then((result) => {
                 if (result.value) {
                     if (params.confirm)
