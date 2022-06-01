@@ -705,6 +705,22 @@ body.el-loading-parent--hidden {
   margin-bottom: 20px;
 }
 
+/***************************************
+* Developer : corner
+* Description : 공통 스타일
+****************************************/
+h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #222222;
+    margin-bottom: 20px;
+}
+.page_title {
+    padding-top: 150px;
+    position: relative;
+    h2 { color: #FFFFFF }
+}
+
 .el-date-picker{
   &.not_now{
     .el-picker-panel__footer{
@@ -714,6 +730,34 @@ body.el-loading-parent--hidden {
     }
   }
 }
+/**********************************
+    Developer : corner
+    Description: el tag 컬러 테마 설정
+ ***********************************/
+.el-button:focus {
+    color: #222222;
+    background-color: #FFFFFF;
+    border-color: #e5e5e5;
+}
+.el-button:hover {
+    background-color: #673ab7;
+    color: #FFFFFF;
+    border-color: #673ab7;
+}
+.el-button--primary {
+    color: #fff;
+    background-color: #FFFFFF;
+    border-color: #673ab7;
+}
+.el-button--primary:hover {
+    background-color: #673ab7;
+    color: #FFFFFF;
+    border-color: #673ab7;
+}
+.el-message-box__close:before, .el-message-box__headerbtn:hover {
+    color: #222222;
+}
+
 // 데이트 피커
 .date_picker{
   //width: unset !important;
@@ -1381,4 +1425,37 @@ a {
     box-shadow: #8859ff 0px 0px 0px 1px inset;
   }
 }
-
+.tag-input {
+    width: 80px;
+    height: 35px;
+    input {
+        height: 100%;
+        color: #3a3a3a;
+        border-radius: 5px;
+        &:active {
+            box-shadow: #8859ff 0px 0px 0px 1px inset;
+        }
+        &:focus {
+            box-shadow: #8859ff 0px 0px 0px 1px inset;
+        }
+    }
+}
+.tag_box {
+    width: fit-content;
+    height: 35px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #3a3a3a;
+    border: 1px solid #8859ff;
+    border-radius: 16px;
+    padding: 0 16px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    &:last-of-type {
+        margin-right: 0;
+    }
+}

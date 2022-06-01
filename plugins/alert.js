@@ -1,66 +1,69 @@
-/*****************************************************************
-*
-*  Filename : plugins/alert.js
-*
-*****************************************************************/
+import Swal from 'sweetalert2'
+import Vue from "vue";
+/****************************
+ * Developer : corner
+ * Description :
+                alert 관련 메시지 이벤트 저장 후 사용
+ ****************************/
 
-export default (context, inject, app) => {
-
-	const camp_alert = {
-		alert(options){
-
-			if(!options.title)	options.title = '';
-			if(!options.message) options.message = '';
-			if(!options.ok_txt) options.ok_txt = '확인';
-
-
-			context.store.commit('dialog/alert', {
-				title:options.title,
-				icon:options.icon,
-				message:options.message,
-				ok_txt:options.ok_txt,
-				close_button_hide:options.close_button_hide,
-				callback: ()=>{
-					try{
-						options.callback();
-					}catch(e){
-
-					}
-				},
-
-			});
-		},
-		confirm(options){
-
-			if(!options.title)	options.title = '';
-			if(!options.message) options.message = '';
-			if(!options.ok_txt) options.ok_txt = '확인';
-			if(!options.cancel_txt) options.cancel_txt = '취소';
-
-			context.store.commit('dialog/confirm', {
-				title:options.title,
-				icon:options.icon,
-				message:options.message,
-				ok_txt:options.ok_txt,
-				cancel_txt:options.cancel_txt,
-				close_button_hide:options.close_button_hide,
-				callback: ()=>{
-					try{
-						options.callback();
-					}catch(e){
-
-					}
-				},
-				cancel: ()=>{
-					try{
-						options.cancel();
-					}catch(e){
-
-					}
-				},
-			});
-		}
-	}
-
-	inject('camp_alert', camp_alert)
+Vue.prototype.$alert = {
+        createAlert(params) {
+            Swal.fire({
+                title: !params.title ? '' : params.title,
+                html: !params.content ? '' : params.content,
+                confirmButtonText: !params.btnText ? '확인' : params.btnText,
+                customClass: params.classname ? params.classname : 'campfire_alert',
+                //check면 chk_alert 클래스.
+                onClose: () => {
+                    if (params.back) {
+                        window.history.back();
+                    } else if (params.hide) {
+                        params.hide();
+                    }
+                }
+            })
+        },
+        createConfirm(params) {
+            Swal.fire({
+                title: !params.title ? '' : params.title,
+                html: !params.content ? '' : params.content,
+                confirmButtonText: !params.confirmText ? '확인' : params.confirmText,
+                cancelButtonText: !params.cancelText ? '취소' : params.cancelText,
+                showCancelButton: true,
+                customClass: params.classname ? params.classname : 'campfire_confirm',
+                showCloseButton: false,
+                reverseButtons: true,
+                //check면 chk_alert 클래스를 주세요.
+            }).then((result) => {
+                if (result.value) {
+                    if (params.confirm)
+                        params.confirm();
+                } else if (result.dismiss === 'cancel') {
+                    if (params.cancel)
+                        params.cancel();
+                } else if (result.dismiss === 'dismiss') {
+                    if (params.hide)
+                        params.hide();
+                }
+            })
+        },
+        doubleButtonAlert(params) {
+            Swal.fire({
+                showConfirmButton: true,
+                showCancelButton: true,
+                confirmButtonText: !params.confirmText ? '확인' : params.confirmText,
+                cancelButtonText: !params.cancelText ? '취소' : params.cancelText,
+                customClass: 'double_b_alert',
+            }).then((result) => {
+                if (result.value) {
+                    if (params.confirm)
+                        params.confirm();
+                } else if (result.dismiss === 'cancel') {
+                    if (params.cancel)
+                        params.cancel();
+                }
+            });
+    }
 }
+
+export default Vue.prototype.$alert;
