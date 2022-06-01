@@ -1,6 +1,9 @@
 <template>
     <div class="form_main_wrap" id="main_fullbg">
         <div class="mainwrap"></div>
+        <div class="page_title">
+            <h2>회원가입</h2>
+        </div>
         <div class="form_white">
             <form>
                 <div class="form-group p-relative">
@@ -45,7 +48,7 @@
                     <div class="form-group">
                         <div class="p-relative">
                             <label for="address">지역</label>
-                            <el-input type="text" class="auth-input" id="address"
+                            <el-input type="text" class="auth-input" id="address" @keyup.enter.native="checkValidator"
                                       v-model="address" placeholder="지역을 입력해주세요"/>
                             <div class="validation" v-if="validation.hasError('address')">
                                 {{ validation.firstError('address') }}
@@ -53,7 +56,9 @@
                         </div>
                     </div>
                 </div>
-                <el-button type="submit" @click="checkValidator" class="btn btn-primary">회원가입</el-button>
+                <el-button type="submit" @click="checkValidator" @keyup.enter="checkValidator"
+                           class="btn btn-primary">회원가입
+                </el-button>
                 <el-button class="btn btn-primary" @click="$router.replace('/')">취소</el-button>
             </form>
         </div>
@@ -85,17 +90,19 @@ export default {
                 if (res) {
                     this.register();
                 } else {
-                    this.$alert("입력하신 내용을 확인해주세요.", "가입 실패", {
-                        confirmButtonText: "확인",
+                    this.createAlert({
+                        title: '알림',
+                        message: '저런... 어떤 것들이 잘못되었어요.',
+                        type: 'warning',
                     });
                 }
             });
         },
         register() {
             let params = {
-                'nickname' : this.nickname,
-                'email' : this.email,
-                'password' : this.password,
+                'nickname': this.nickname,
+                'email': this.email,
+                'password': this.password,
                 'address': this.address,
             }
             if (this.tags.length > 0) {
@@ -103,15 +110,45 @@ export default {
             }
 
             try {
-                this.$api.$auth.createMember(params).then(res => res.data.result).then(res => {
-                    if (res.info.type) {
-                        console.log(res);
+                this.$api.$auth.createMember(params).then(res => {
+                    console.log(res);
+                    if (res.info.type === true) {
+                        this.createAlert({
+                            title: '축하드립니다!',
+                            message: '모닥불 회원이 되신걸 환영합니다.',
+                            ok_btn: '확인',
+                            callback: () => {
+                                this.afterFunc();
+                            },
+                        });
+                    } else {
+                        this.failedAlert();
                     }
                 });
             } catch (e) {
                 console.log(e);
             }
-        }
+        },
+        failedAlert() {
+            this.createAlert({
+                'title': '알림',
+                'message': '저런.. 회원가입 실패입니다. 다시 시도해주세요.',
+                callback: () => {
+                    this.$router.replace('/auth/register');
+                },
+            });
+        },
+        afterFunc() {
+            this.createConfirm({
+                'title': '잠깐!🤚',
+                'message': "관심 태그가 없으시군요!<br/>지금 추가 하시겠습니까?",
+                'ok_btn': '네',
+                'cancel_btn': '아니오',
+                callback: () => {
+                    this.$router.replace('/register/tags');
+                },
+            });
+        },
     },
 }
 </script>

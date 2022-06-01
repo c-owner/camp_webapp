@@ -39,7 +39,6 @@ export default {
     plugins: [
         '@/plugins/element-ui',
         '@/plugins/fontawesome.js',
-        '~plugins/swal.js',
         '~plugins/alert.js',
         '~api/index.js'
     ],
