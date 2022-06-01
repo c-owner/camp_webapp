@@ -31,7 +31,11 @@
             <li id="topmenu">
               <NuxtLink to="/">테마검색</NuxtLink>
             </li>
-            <li id="topmenu"><NuxtLink to="/">모닥불장터</NuxtLink></li>
+            <li id="topmenu">
+                <transition name="fade">
+                    <NuxtLink to="/">모닥불장터</NuxtLink>
+                </transition>
+            </li>
             <li id="topmenu"><NuxtLink to="/">캠핑정보</NuxtLink></li>
             <li id="topmenu"><NuxtLink to="/">커뮤니티</NuxtLink></li>
           </ul>

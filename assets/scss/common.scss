@@ -705,6 +705,19 @@ body.el-loading-parent--hidden {
   margin-bottom: 20px;
 }
 
+/*******************************************
+* Developer : corner
+* Description : 트랜지션 클래스
+********************************************/
+// name : slide-down
+
+// name : fade
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+}
 /***************************************
 * Developer : corner
 * Description : 공통 스타일
@@ -1459,3 +1472,4 @@ a {
         margin-right: 0;
     }
 }
+

@@ -8,6 +8,7 @@
 export default {
     name: "Auth",
     layout: "HeaderFooter",
+    transition: 'fade',
 }
 </script>
 
