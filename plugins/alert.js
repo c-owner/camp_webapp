@@ -1,12 +1,12 @@
 import Swal from 'sweetalert2'
+import Vue from "vue";
 /****************************
  * Developer : corner
  * Description :
                 alert 관련 메시지 이벤트 저장 후 사용
  ****************************/
 
-export default {
-    methods: {
+Vue.prototype.$alert = {
         createAlert(params) {
             Swal.fire({
                 title: !params.title ? '' : params.title,
@@ -63,7 +63,7 @@ export default {
                         params.cancel();
                 }
             });
-        }
-
     }
 }
+
+export default Vue.prototype.$alert;

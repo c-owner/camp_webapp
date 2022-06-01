@@ -1425,4 +1425,37 @@ a {
     box-shadow: #8859ff 0px 0px 0px 1px inset;
   }
 }
-
+.tag-input {
+    width: 80px;
+    height: 35px;
+    input {
+        height: 100%;
+        color: #3a3a3a;
+        border-radius: 5px;
+        &:active {
+            box-shadow: #8859ff 0px 0px 0px 1px inset;
+        }
+        &:focus {
+            box-shadow: #8859ff 0px 0px 0px 1px inset;
+        }
+    }
+}
+.tag_box {
+    width: fit-content;
+    height: 35px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #3a3a3a;
+    border: 1px solid #8859ff;
+    border-radius: 16px;
+    padding: 0 16px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    &:last-of-type {
+        margin-right: 0;
+    }
+}

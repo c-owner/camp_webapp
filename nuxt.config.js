@@ -55,7 +55,8 @@ export default {
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
         '@nuxtjs/toast',
-        '@nuxtjs/proxy'
+        '@nuxtjs/proxy',
+        'nuxt-sweetalert2'
     ],
     proxy: {
         '/api/v1': { target: 'API_URL', pathRewrite: {'^/api/v1': ''} }

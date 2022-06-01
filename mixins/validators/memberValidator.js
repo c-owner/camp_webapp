@@ -1,5 +1,7 @@
 import Vue from 'vue';
 import SimpleVueValidation from 'simple-vue-validator';
+import {maxLength, minLength} from "simple-vue-validator/src/templates";
+import {resolve} from "chart.js/helpers";
 const Validator = SimpleVueValidation.Validator;
 
 Vue.use(SimpleVueValidation);
@@ -19,7 +21,7 @@ export default {
             emailCheckDuplicate: false,
             emailDuplicate: false,
             address: '',
-            tags: [],
+            tag: '',
 
             // login
             id: '',
@@ -87,6 +89,17 @@ export default {
                 .custom(() => {
                     if (value.length < 1) {
                         return '주소를 입력해주세요.';
+                    }
+                })
+        },
+        tag: function (value) {
+            return Validator.value(value)
+                .required('태그를 입력해주세요.')
+                .minLength(2, '태그는 2자 이상 입력해주세요.')
+                .maxLength(8, '태그는 8자 이하로 입력해주세요.')
+                .custom(() => {
+                    if (this.tags.length >= 5) {
+                        return '태그는 5개까지 입력할 수 있습니다.';
                     }
                 })
         },
