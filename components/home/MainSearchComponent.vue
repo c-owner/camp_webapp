@@ -27,7 +27,7 @@ export default {
   props: {},
   data() {
     return {
-      searchTitle: '우리..같이 캠핑갈래요?👉👈',
+      searchTitle: '같이 캠핑갈래요?👉👈',
       searchInput: '',
     }
   },
