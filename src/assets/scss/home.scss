@@ -18,7 +18,7 @@
 }
 
 #main_fullbg {
-  background-image: url("./assets/image/main_bg_02.jpg");
+  background-image: url("/./assets/image/main_bg_02.jpg");
   //background-size: 100% 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -134,7 +134,7 @@
       right: 0;
       top: 0;
       bottom: 0;
-      background: rgba(0, 0, 0, 0.45) url('./assets/image/dot2.png');
+      background: rgba(0, 0, 0, 0.45) url('/./assets/image/dot2.png');
       //background-image: url('./assets/image/dot2.png');
       z-index: -1;
     }
