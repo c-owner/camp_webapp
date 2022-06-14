@@ -13,19 +13,6 @@ font-weight: 200~900
 */
 
 
-/*
-::: 선거 테마 컬러코드 :::
-메인 폰트 컬러 #191919
-진한 회색 폰트 #707070
-메인 갈색 컬러 #6f594c
-서브 갈색 컬러 #b99077
-강조 빨강 #8d0404
-
-중간 그레이 #b7b7b7 (주로 실선)
-연한 그레이 #f6f6f6 (주로 배경)
-*/
-
-
 /* 기훈 : 사용하고자 하는 곳에 변수
 ex) $variable-name 를  넣으면됩니다.
 h1 {
@@ -42,6 +29,7 @@ h1 {
 // 여기에 메인컬러,서브컬러 등의 임의 변수를 설정하면 SCSS 어디에서도 사용할 수 있습니다.
 
 // 폰트
+
 $NotoSansCJK : 'Noto Sans KR' !important;
 $body-font-family:"Noto Sans KR";
 $title-font-family:"Noto Sans KR";
@@ -965,96 +953,6 @@ h2 {
   }
 }
 
-// createAlert css 생성했습니다.
-.electionAlert_main {
-  letter-spacing: -0.05em;
-  border-radius: 20px;
-  border: 1px solid #d2d2d2;
-  color: #191919;
-  background-color: #f8f8f8;
-  font-size: 16px !important;
-  padding: 40px 36px 20px 36px;
-  width: auto !important;
-  min-width: 365px;
-  max-width: 365px;
-
-  #swal2-content {
-    font-size: 16px !important;
-    padding-bottom: 8px;
-  }
-  .swal2-actions{
-    button:focus{
-      outline: none !important;
-      box-shadow: none !important;
-      filter: none !important;
-    }
-    button:hover{
-      background-image: none !important;
-    }
-    // 버튼
-    .swal2-confirm{
-      min-height: 34px;
-      min-width: 96px;
-      border-radius: 17px;
-      border: 1px solid #6e594c;
-      background-color: #6e594c;
-      font-size: 14px !important;
-      font-weight: bold;
-    }
-  }
-}
-
-//createConfirm css 생성했습니다.
-.electionAlert_main_confirm{
-  letter-spacing: -0.05em;
-  border-radius: 20px;
-  border: 1px solid #d2d2d2;
-  background-color: #f8f8f8;
-  font-size: 16px !important;
-  padding: 44px 50px 44px 50px;
-  color: #191919;
-  width: auto !important;
-  min-width: 365px;
-  max-width: 365px;
-  #swal2-content {
-    font-size: 16px !important;
-    //padding-bottom: 10px;
-  }
-  .swal2-actions{
-    button:focus{
-      outline: none !important;
-      box-shadow: none !important;
-    }
-    button:hover{
-      background-image: none !important;
-    }
-    // 확인 버튼
-    .swal2-confirm{
-      min-height: 34px;
-      min-width: 96px;
-      border-radius: 17px;
-      border: 1px solid #6e594c;
-      background-color: #6e594c;
-      font-size: 14px !important;
-      font-weight: bold;
-
-    }
-    //취소 버튼
-    .swal2-cancel{
-      min-height: 34px;
-      min-width: 96px;
-      border-radius: 17px;
-      border: 1px solid #6e594c;
-      background-color: transparent;
-      font-size: 14px !important;
-      font-weight: bold;
-      color: #6e594c;
-      &:focus{
-        outline: none !important;
-      }
-    }
-  }
-}
 .attach_file{
   margin-left:15px;
   color:#707070;
