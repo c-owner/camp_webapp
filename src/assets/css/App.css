@@ -3,8 +3,7 @@
   margin: 0 auto;
 }
 #header_wrap {
-  background-color: #eeeeee;
-  padding: 0 5vw;
+  padding: 0 15px;
 }
 
 #header_wrap #header_menu_wrap,
@@ -13,10 +12,9 @@
 }
 
 #main_wrap {
-  margin: 0 5vw;
+  margin: 0 15px;
 }
 
 #footer_wrap {
-  background-color: #eeeeee;
-  padding: 0 5vw;
+  padding: 0 15px;
 }
