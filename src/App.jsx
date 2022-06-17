@@ -1,11 +1,10 @@
 import './assets/css/App.css';
 import './assets/scss/index.scss';
 import './assets/css/reset.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Main from "./views/Main";
-import Header from "./components/Header"
-import Footer from './components/Footer';
+import Header from "./layouts/Header"
+import Footer from './layouts/Footer';
 
 function App() {
     return (
