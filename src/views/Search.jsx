@@ -4,6 +4,7 @@ const Search = () => {
   return (
     <div>
       <input type="text" />
+      asdasdasdasd
     </div>
   )
 }

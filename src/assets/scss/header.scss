@@ -1,1 +1,20 @@
 @charset "UTF-8";
+
+#header {
+  height: 70px;
+  border-bottom: 1px solid blue;
+  box-sizing: border-box;
+  background-color: #F1F5F9;
+  .header-main-logo {
+    img {
+      width: 120px;
+    }
+  }
+  .header-icon-box {
+    float: right;
+    .header-icon {
+      width: 33px;
+      height: 33px;
+    }
+  }
+}

@@ -7,6 +7,10 @@ const Main = () => {
       <div className="main-section">
         <SectionComponent id="tag" title="어디로갈까?" detail="최근30일랭킹"/>
         <SectionComponent id="circle" title="맘대로하자" detail="더보기"/>
+        <SectionComponent id="circle" title="맘대로하자" detail="더보기"/>
+        <SectionComponent id="circle" title="맘대로하자" detail="더보기"/>
+        <SectionComponent id="circle" title="맘대로하자" detail="더보기"/>
+        <SectionComponent id="circle" title="맘대로하자" detail="더보기"/>
         <SectionComponent id="slider" title="슬라이더" detail="더보기"/>
         <SectionComponent id="second" title="중고매물" detail="더보기"/>
       </div>
