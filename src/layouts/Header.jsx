@@ -1,15 +1,19 @@
-import React, {Component} from 'react';
-import HeaderMenuItem from '../components/HeaderMenuItem';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from '../assets/logo/header_logo.png'
+import HeaderMenuItemComponent from '../components/HeaderMenuItemComponent';
 
-class header extends Component {
-    render() {
-        return (
-            <div id="header_wrap">
-                <div id="header_main_logo"></div>
-                <HeaderMenuItem></HeaderMenuItem>
-            </div>
-        );
-    }
+const Header = () => {
+    return (
+        <>
+            <Link to="/">
+                <div className='header-main-logo in_block'>
+                <img src={ logo } className="main-logo" alt="메인로고" />
+                </div>
+            </Link>
+            <HeaderMenuItemComponent/>
+        </>
+    )
 }
 
-export default header;
+export default Header;

@@ -1,48 +1,20 @@
 @charset "UTF-8";
 
-#header_wrap {
-  height: 60px;
-  #header_main_logo {
-    margin-bottom: 0;
-    width: 120px;
-    height: 60px;
-    float: left;
-    color: transparent;
-    background-image: url(../logo/header_logo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-
+#header {
+  height: 70px;
+  border-bottom: 1px solid blue;
+  box-sizing: border-box;
+  background-color: #F1F5F9;
+  .header-main-logo {
+    img {
+      width: 120px;
+    }
   }
-
-  #header_menu_wrap {
+  .header-icon-box {
     float: right;
-    margin-bottom: 0;
-    .header_menu {
-      height: 60px;
-      width: 30px;
-      display: inline-block;
-      a {
-        vertical-align: top;
-        text-decoration: none;
-        i {
-          position: absolute;
-          padding: 20px 10px;
-          box-sizing: content-box;
-          height: 60px;
-          font-size: 20px;
-          line-height: 20px;
-          width: 20px;
-          height: 20px;
-          color: #545e6d;
-        }
-        span {
-          font-size: 0;
-        }
-      }
-      & + .header_menu {
-        margin-left: 10px;
-      }
+    .header-icon {
+      width: 33px;
+      height: 33px;
     }
   }
 }
