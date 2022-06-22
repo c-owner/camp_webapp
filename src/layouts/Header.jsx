@@ -1,15 +1,16 @@
-import React, {Component} from 'react';
-import HeaderMenuItem from '../components/HeaderMenuItem';
+import React from 'react';
+import logo from '../assets/logo/header_logo.png'
+import HeaderMenuItemComponent from '../components/HeaderMenuItemComponent';
 
-class header extends Component {
-    render() {
-        return (
-            <div id="header_wrap">
-                <div id="header_main_logo"></div>
-                <HeaderMenuItem></HeaderMenuItem>
+const Header = () => {
+    return (
+        <div>
+            <div>
+                <img src={ logo } className="Main-logo" alt="메인로고" />
             </div>
-        );
-    }
+            <HeaderMenuItemComponent/>
+        </div>
+    )
 }
 
-export default header;
+export default Header;

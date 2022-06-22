@@ -1,22 +1,16 @@
-import React, { Component } from 'react'
-import BannerSection from '../components/BannerSection'
+import React from 'react';
+import SectionComponent from '../layouts/SectionComponent';
 
-
-export default class Main extends Component {
-  render() {
-
-    return (
-      <>
-        <div id='main_wrap'>
-          <BannerSection/>
-          <section id='region_section'>
-            지역 색션
-          </section>
-          <section id='map_section'>
-            지도 색션
-          </section>
-        </div>
-      </>
-    )
-  }
+const Main = () => {
+  return (
+    <div>
+      <div>
+        <SectionComponent id="tag" title="어디로갈까?"/>
+        <SectionComponent id="circle" title="맘대로하자"/>
+        <SectionComponent id="slider" title="슬라이더"/>
+      </div>
+    </div>
+  )
 }
+
+export default Main;
