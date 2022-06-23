@@ -1,0 +1,29 @@
+.section-box {
+  background-color: white;
+  box-shadow: 0px 5px 4px -4px rgba(0,0,0,0.1);
+  .section-box-top {
+    line-height: 20px;
+    .section-title {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: $color-main;
+    }
+    .section-detail {
+      font-size: 0.8rem;
+      float: right;
+    }
+  }
+
+  // Tag Section
+  .tag-box {
+    .tag-item-box {
+      margin: 5px 10px;
+      padding: 5px 8px;
+      display: inline-block;
+      border: 1px solid #cccccc;
+      border-radius: 15px;
+      font-size: 0.85rem;
+    }
+  }
+
+}
