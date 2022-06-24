@@ -28,4 +28,36 @@
     }
   }
 
+  .circle-box {
+
+    .circle-item-box {
+      color: $color-main;
+      width: 20%;
+      box-sizing: border-box;
+      text-align: center;
+      margin-bottom: 10vw;
+      .circle-item {
+        position: relative;
+        margin: 0 auto;
+        width: 10vw;
+        height: 10vw;
+        border-radius: 50%;
+        background-image: url(../image/thumbnail/img02.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        .circle-item-text {
+          font-size: 0.8rem;
+          position: absolute;
+          bottom: -4vw;
+          width: 100%;
+          transform: translate(-50%,0);
+        }
+      }
+    }
+    .circle-item-box:nth-child(5n) {
+      margin-right: 0;
+    }
+  }
+
 }
