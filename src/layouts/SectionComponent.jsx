@@ -16,7 +16,7 @@ const SectionComponent = (props) => {
     }
   }
   return (
-    <div className="section-box pa15 mb20">
+    <div className="section-box pa15 mb15">
       <div className='section-box-top mb15'>
         <h3 className="section-title in_block">{props.title}</h3>
         <Link to="/search">
