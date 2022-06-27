@@ -3,6 +3,7 @@ import CircleSectionComponent from '../components/CircleSectionComponent';
 import SecondHandSectionComponent from '../components/SecondHandSectionComponent';
 import SliderSectionComponent from '../components/SliderSectionComponent';
 import TagSectionComponent from '../components/TagSectionComponent';
+import { Link } from 'react-router-dom';
 
 const SectionComponent = (props) => {
 
@@ -15,9 +16,13 @@ const SectionComponent = (props) => {
     }
   }
   return (
-    <div>
-      <h3>{props.title}</h3>
-      <div>{ props.detail }</div>
+    <div className="section-box pa15 mb15">
+      <div className='section-box-top mb15'>
+        <h3 className="section-title in_block">{props.title}</h3>
+        <Link to="/">
+          <div className="section-detail">{props.detail}</div>
+        </Link>
+      </div>
       { SectionBrancher(props.id) }
     </div>
   )

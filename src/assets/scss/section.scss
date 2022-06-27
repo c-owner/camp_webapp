@@ -1,0 +1,63 @@
+.section-box {
+  background-color: white;
+  box-shadow: 0px 5px 4px -4px rgba(0,0,0,0.1);
+  .section-box-top {
+    line-height: 20px;
+    .section-title {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: $color-main;
+    }
+    .section-detail {
+      color: $color-main;
+      font-size: 0.8rem;
+      float: right;
+    }
+  }
+
+  // Tag Section
+  .tag-box {
+    .tag-item-box {
+      color: $color-main;
+      margin: 5px 10px;
+      padding: 5px 8px;
+      display: inline-block;
+      border: 1px solid #cccccc;
+      border-radius: 15px;
+      font-size: 0.85rem;
+    }
+  }
+
+  .circle-box {
+
+    .circle-item-box {
+      color: $color-main;
+      width: 20%;
+      box-sizing: border-box;
+      text-align: center;
+      margin-bottom: 10vw;
+      .circle-item {
+        position: relative;
+        margin: 0 auto;
+        width: 10vw;
+        height: 10vw;
+        border-radius: 50%;
+        background-image: url(../image/thumbnail/img02.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        .circle-item-text {
+          font-size: 0.8rem;
+          position: absolute;
+          bottom: -4vw;
+          width: 100%;
+          transform: translate(-50%,0);
+        }
+      }
+    }
+    .circle-item-box:nth-child(5n) {
+      margin-right: 0;
+    }
+  }
+
+}

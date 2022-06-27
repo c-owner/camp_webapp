@@ -2,9 +2,9 @@
 
 #header {
   height: 70px;
-  border-bottom: 1px solid blue;
   box-sizing: border-box;
-  background-color: #F1F5F9;
+  background-color: white;
+  border-bottom: 1px solid rgba($color: #bbbaba, $alpha: 0.1);
   .header-main-logo {
     img {
       width: 120px;
