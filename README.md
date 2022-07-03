@@ -1,6 +1,6 @@
 
 
-# Camp Corner Web Site 🏕
+# 캠핑친구24 APP 🏕
 
 ---
 
@@ -12,12 +12,12 @@
 
 # Info
 
-- **캠핑 위치, 기타 정보 제공 사이트**
+- **캠핑 위치, 캠핑장 정보 제공 애플리케이션**
 - **중고 장터**
 - **캠퍼들 간의 소통**
 
 
-**Contributors(2)**
+**기여자(2)**
 <ul class="list-style-none ">
     <li class="mb-2 d-flex" data-test-selector="grid-mode-element">
       <a href="https://github.com/Eight-Corner" class="mr-2" data-hovercard-type="user" data-hovercard-url="/users/Eight-Corner/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self">
