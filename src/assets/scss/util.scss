@@ -741,7 +741,13 @@ $main-color: #F1F5F9; //임시 메인컬러*/
     height: 100%;
 }
 .in_block{
-  display: inline-block;
+  display: inline-block !important;
+}
+.d-block {
+  display: block !important;
+}
+.d-none {
+  display: none !important;
 }
 .cursor{
     cursor: pointer;
@@ -771,4 +777,53 @@ $main-color: #F1F5F9; //임시 메인컬러*/
 }
 .text-theme {
   color: $theme-color;
+}
+
+.ft-12 {
+  font-size: 12px !important;
+}
+.ft-14 {
+  font-size: 14px !important;
+}
+.ft-16 {
+  font-size: 16px !important;
+}
+.ft-18 {
+  font-size: 18px !important;
+}
+.ft-20 {
+  font-size: 20px !important;
+}
+.ft-22 {
+  font-size: 22px !important;
+}
+.ft-24 {
+  font-size: 24px !important;
+}
+.ft-26 {
+  font-size: 26px !important;
+}
+.ft-28 {
+  font-size: 28px !important;
+}
+.ft-30 {
+  font-size: 30px !important;
+}
+.ft-32 {
+  font-size: 32px !important;
+}
+.ft-34 {
+  font-size: 34px !important;
+}
+.ft-36 {
+  font-size: 36px !important;
+}
+.ft-38 {
+  font-size: 38px !important;
+}
+.ft-40 {
+  font-size: 40px !important;
+}
+.ft-42 {
+  font-size: 42px !important;
 }

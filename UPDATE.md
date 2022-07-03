@@ -22,6 +22,14 @@
 
 - `app.scss` 파일 추가, app에 기본 base가 되는 css 파일이 될 것입니다.
 
+- Material UI (MUI) install 
+
+  - [Material Ui 참고 문서](https://mui.com/material-ui/getting-started/installation/)
+
+- Footer 개발
+
+  
+
   
 
   
