@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo/header_logo.png'
-import HeaderMenuItemComponent from '../components/HeaderMenuItemComponent';
+import logo from 'assets/logo/header_logo.png'
+import HeaderMenuItemComponent from 'components/HeaderMenuItemComponent';
 
 const Header = () => {
     return (
