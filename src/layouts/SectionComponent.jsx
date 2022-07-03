@@ -13,6 +13,7 @@ const SectionComponent = (props) => {
       case 'circle' : return <CircleSectionComponent />;
       case 'slider': return <SliderSectionComponent />;
       case 'second': return <SecondHandSectionComponent />;
+      default: return <div>....</div>;
     }
   }
   return (
