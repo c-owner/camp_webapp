@@ -11,14 +11,14 @@ function App() {
             <div id="header" className="pa15 p-fixed w100p">
                 {<Header />}
             </div>
-            <div id="body" className="camp-app-body pt70">
+            <div id="body" className="camp-app-body pt80 mb80">
                 <Routes>
                     <Route path="/" element={<Main />} />
                     <Route path="/search" element={<Search/>}/>
                 </Routes>
             </div>
             <div id="footer">
-                {<Footer className="App-footer"/>}
+                {<Footer />}
             </div>
         </div>
     );
