@@ -1,6 +1,4 @@
-import 'assets/css/App.css';
 import 'assets/scss/index.scss';
-import 'assets/css/reset.css';
 import { Routes, Route } from "react-router-dom";
 import Main from "views/Main";
 import Header from "layouts/ui/Header";
