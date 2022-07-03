@@ -13,7 +13,7 @@ function getConfig(key = 'api') {
     return isDev ? config.dev[key] : config.prod[key];
 }
 
-let apiUrl = getConfig('api') + '/api/';
+let apiUrl = getConfig('api') + '/api/v1';
 
 
 export {apiUrl, getConfig};
