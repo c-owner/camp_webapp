@@ -2,7 +2,6 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 const TagSectionComponent = () => {
-    let regionId = 0
     // {
     //   korea : '전국',
     //   seoul : '서울',
