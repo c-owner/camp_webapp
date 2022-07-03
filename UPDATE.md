@@ -22,14 +22,6 @@
 
 - `app.scss` 파일 추가, app에 기본 base가 되는 css 파일이 될 것입니다.
 
-- Material UI (MUI) install 
-
-  - [Material Ui 참고 문서](https://mui.com/material-ui/getting-started/installation/)
-
-- Footer 개발
-
-  
-
-  
+- component -> map List에서 key 값을 prop으로 전달할 때 `<React.Fragment key={key}`에다 전달 하여야 합니다.
 
   
