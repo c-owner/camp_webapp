@@ -6,6 +6,7 @@ import Footer from 'layouts/ui/Footer';
 import Search from 'views/Search';
 
 function App() {
+
     return (
         <div className="App">
             <div id="header" className="pa15 p-fixed w100p">
