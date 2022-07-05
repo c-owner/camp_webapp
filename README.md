@@ -4,6 +4,9 @@
 
 ---
 
+![로그아웃 화면 ( 온보드 )](https://user-images.githubusercontent.com/68332735/177161603-82b3ecf2-89d5-4d07-b15d-c32ab6c8d0b0.png)
+
+
 ## 🚀 Update NOTE
 
 [Update Note Connect](https://github.com/Eight-Corner/campfire_web/discussions)
