@@ -15,7 +15,7 @@ const check = authCheck("/auth").then(res => {
 
 const Main = () => {
     const navigate = useNavigate();
-
+/*
     check.then(res => {
         if (!res) {
             alert('로그인 화면으로 이동합니다.')
@@ -24,7 +24,7 @@ const Main = () => {
             alert('로그인 성공')
             navigate("/");
         }
-    });
+    });*/
     return (
         <div>
             <div className="main-section">
