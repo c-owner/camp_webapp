@@ -5,16 +5,16 @@ import Footer from 'layouts/ui/Footer';
 import Main from "views/Main";
 import Search from 'views/Search';
 import Login from 'views/auth/Login';
-import OnBoard from "./views/OnBoard";
-
+import OnBoard from "./views/auth/OnBoard";
 
 function App() {
-
     return (
         <div className="App">
+
             <div id="header" className="pa15 p-fixed w100p">
-                {<Header/>}
+                { <Header/>}
             </div>
+
             <div id="body" className="camp-app-body pt80 mb80">
                 <Routes>
                     <Route path="/" element={<Main/>}/>

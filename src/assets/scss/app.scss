@@ -19,8 +19,8 @@ $font-size-validation: 15px; //validation-font-size
 // 폰트 컬러
 $color-main: #191919; // main font
 $color-sub: #191919; // sub font
-$placeholder-color: #707070; //placeholder 컬러
-$theme-color: #01579b; //theme color
+$placeholder-color: #777777; //placeholder 컬러
+$theme-color: #0ACF83; //theme color
 
 // 폰트 굵기
 $font-bold: 700; // font-weight 700 (Bold)
@@ -28,17 +28,22 @@ $font-medium: 500; // font-weight 500 (Medium)
 $font-regular: 400; // font-weight 400 (regular)
 
 // 버튼 컬러
-$submit-btn: #01579b; // submit 확인 버튼
-$cancel-btn: #707070; // submit 확인 버튼
+$submit-btn: #0ACF83; // submit 확인 버튼
+$cancel-btn: #fff; // submit 확인 버튼
 
 // 보더 컬러
-$border-color: #e5e5e5; // border color 테두리 컬러
+$border-color: #0ACF83; // border color 테두리 컬러
 $main-color: #F1F5F9; //임시 메인컬러
 
 .App {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+/*****************************
+    * 헤더 있을 때 없을 때
+*****************************/
+
 
 #header {
   max-width: 1200px;
