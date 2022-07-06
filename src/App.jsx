@@ -5,6 +5,7 @@ import Footer from 'layouts/ui/Footer';
 import Main from "views/Main";
 import Search from 'views/Search';
 import Login from 'views/auth/Login';
+import OnBoard from "./views/OnBoard";
 
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
             <div id="body" className="camp-app-body pt80 mb80">
                 <Routes>
                     <Route path="/" element={<Main/>}/>
-                    <Route path="/auth" element={<Login/>}/>
+                    <Route path="/auth" element={<OnBoard/>} />
+                    <Route path="/login" element={<Login/>}/>
                     <Route path="/search" element={<Search/>}/>
                 </Routes>
             </div>

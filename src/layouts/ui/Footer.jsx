@@ -28,7 +28,7 @@ const Footer = () => {
                     <MapIcon className='ft-32' />
                     <div className='btn-name'>지도</div>
                 </Button>
-                <Button onClick={() => moveUrl('/auth')}
+                <Button onClick={() => moveUrl('/login')}
                     className="in_block" variant="text" color="primary">
                     <PersonIcon className='ft-32' />
                     <div className='btn-name'>마이페이지</div>
