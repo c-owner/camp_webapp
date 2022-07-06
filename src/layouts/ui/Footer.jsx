@@ -14,7 +14,6 @@ const Footer = () => {
 
     return (
         <div className="footer">
-            <a href="https://www.gogetssl.com" rel="nofollow" title="GoGetSSL Site Seal Logo" ><div id="gogetssl-animated-seal" style="width:180px; height:58px;"></div></a> <script src="https://gogetssl-cdn.s3.eu-central-1.amazonaws.com/site-seals/gogetssl-seal.js"></script>
             <div className="flex-center h100p">
                 <Button onClick={() => moveUrl('/')}
                     className="in_block" variant="text" color="primary">
