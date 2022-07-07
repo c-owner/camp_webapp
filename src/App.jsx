@@ -7,9 +7,27 @@ import Search from 'views/Search';
 import Login from 'views/auth/Login';
 import OnBoard from "./views/auth/OnBoard";
 
+import {authCheck} from "./services/api/member";
+import {Alert, Stack} from "@mui/material";
+
+const check = authCheck("/auth").then(res => {
+    if (res.data.status === 200) {
+        return true;
+    } else {
+        return (
+            <>
+                <Stack sx={{ width: '100%' }} spacing={1}>
+                    <Alert severit  y="warning">로그인이 필요합니다.</Alert>
+                </Stack>
+            </>
+        )
+        return false;
+    }
+}).catch((err) => {
+    console.log("err", err);
+});
+
 function App() {
-
-
     return (
         <div className="App">
 

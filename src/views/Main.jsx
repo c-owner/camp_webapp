@@ -3,16 +3,6 @@ import SectionComponent from 'layouts/SectionComponent';
 import {useNavigate} from "react-router-dom";
 import {authCheck} from "../services/api/member";
 
-const check = authCheck("/auth").then(res => {
-    if (res.data.status === true) {
-        return true;
-    } else {
-        return false;
-    }
-}).catch((err) => {
-    console.log("err", err);
-});
-
 const Main = () => {
     const navigate = useNavigate();
 /*
