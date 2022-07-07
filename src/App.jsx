@@ -18,7 +18,7 @@ function App() {
             <div id="body" className="camp-app-body pt80 mb80">
                 <Routes>
                     <Route path="/" element={<Main/>}/>
-                    <Route path="/auth" element={<OnBoard/>} />
+                    <Route path="/onboard" element={<OnBoard/>} />
                     <Route path="/login" element={<Login/>}/>
                     <Route path="/search" element={<Search/>}/>
                 </Routes>

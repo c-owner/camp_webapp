@@ -5,11 +5,9 @@ import HeaderMenuItemComponent from 'components/HeaderMenuItemComponent';
 
 const Header = () => {
     // 숨길 헤더들
-    if (window.location.pathname === '/auth') return (
+    if (window.location.pathname === '/onboard') return (
         <>
-            <div className="none-header">
-
-            </div>
+            <div className="none-header"></div>
         </>
     );
 

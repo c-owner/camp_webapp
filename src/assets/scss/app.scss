@@ -35,21 +35,23 @@ $cancel-btn: #fff; // submit 확인 버튼
 $border-color: #0ACF83; // border color 테두리 컬러
 $main-color: #F1F5F9; //임시 메인컬러
 
+// 배경색상
+$bg-color: #f4f4f4;
 .App {
   max-width: 1200px;
   margin: 0 auto;
+  background-color: #f5f5f5;
 }
 
 /*****************************
     * 헤더 있을 때 없을 때
 *****************************/
 
-
 #header {
   max-width: 1200px;
   height: 70px;
   box-sizing: border-box;
-  background-color: white;
+  background-color: $bg-color;
   border-bottom: 1px solid rgba($color: #bbbaba, $alpha: 0.1);
   position: absolute;
   top: 0;
