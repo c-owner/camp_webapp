@@ -8,14 +8,16 @@ import Login from 'views/auth/Login';
 import OnBoard from "./views/auth/OnBoard";
 
 function App() {
+
+
     return (
         <div className="App">
 
-            <div id="header" className="pa15 p-fixed w100p">
+            <div>
                 { <Header/>}
             </div>
 
-            <div id="body" className="camp-app-body pt80 mb80">
+            <div id="body" className="camp-app-body">
                 <Routes>
                     <Route path="/" element={<Main/>}/>
                     <Route path="/onboard" element={<OnBoard/>} />
@@ -23,7 +25,7 @@ function App() {
                     <Route path="/search" element={<Search/>}/>
                 </Routes>
             </div>
-            <div id="footer">
+            <div>
                 {<Footer/>}
             </div>
         </div>

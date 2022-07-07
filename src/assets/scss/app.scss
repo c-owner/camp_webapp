@@ -35,8 +35,16 @@ $cancel-btn: #fff; // submit 확인 버튼
 $border-color: #0ACF83; // border color 테두리 컬러
 $main-color: #F1F5F9; //임시 메인컬러
 
+//
 // 배경색상
 $bg-color: #f4f4f4;
+$onboard-color: #E19E9E;
+
+/*********************************************************
+/*********************************************************
+          *************** CSS ******************
+/*********************************************************
+/**********************************************************/
 .App {
   max-width: 1200px;
   margin: 0 auto;
@@ -53,7 +61,7 @@ $bg-color: #f4f4f4;
   box-sizing: border-box;
   background-color: $bg-color;
   border-bottom: 1px solid rgba($color: #bbbaba, $alpha: 0.1);
-  position: absolute;
+  position: relative;
   top: 0;
 
   .header-main-logo {
@@ -92,4 +100,58 @@ $bg-color: #f4f4f4;
   .footer_btn_wrap {
 
   }
+}
+
+/*************************
+* Developer : corner,
+* Description: 온보딩
+**************************/
+.onboard {
+  width: 100%;
+  height: 100vh;
+  background-image: url("~assets/image/onboard_screen.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.onboard-text {
+  color: $onboard-color;
+  font-size: 66px;
+  font-family: $sinhonbubu;
+  padding-top: 2em;
+  text-align: center;
+}
+
+.onboard-btn-wrap {
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 32px);
+  min-height: 75px;
+  background-color: unset;
+
+  //box-shadow: #bbbaba 36px 2px 29px 6px;
+  padding: 0 16px;
+
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.onboard-btn {
+  margin: 0 auto;
+}
+.app-btn {
+  min-width: 150px !important;
+  min-height: 50px;
+}
+.MuiButton-outlinedSuccess {
+  color: $theme-color !important;
+  border-color: $theme-color !important;
+}
+
+.MuiButton-contained {
+  color: #FFFFFF !important;
+  background-color: $theme-color !important;
 }
