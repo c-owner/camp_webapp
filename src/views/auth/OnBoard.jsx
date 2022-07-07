@@ -10,10 +10,14 @@ const OnBoard = () => {
 
             <div className="onboard-btn-wrap">
                 <div className="onboard-btn">
-                    <Button className="app-btn" variant="outlined" color="success">로그인</Button>
+                    <Button className="app-btn" variant="outlined" color="success"
+                            onClick={() => window.location.href = '/login'}>
+                    로그인</Button>
                 </div>
                 <div className="onboard-btn">
-                    <Button className="app-btn" variant="contained" color="primary">회원가입</Button>
+                    <Button className="app-btn" variant="contained"
+                            onClick={() => window.location.href = '/register'}
+                            color="primary">회원가입</Button>
                 </div>
             </div>
         </div>
