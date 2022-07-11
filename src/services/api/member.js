@@ -12,8 +12,8 @@ export const authCheck = async () => {
     });
 }
 export const login = async (url, params) => {
-    // return axios.post(apiUrl + url, params);
-    return await axios.post('http://localhost/api/v1' + url, params);
+    return axios.post(apiUrl + url, params);
+    // return await axios.post('http://localhost/api/v1' + url, params);
 }
 
 

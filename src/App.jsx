@@ -6,6 +6,7 @@ import Main from "views/Main";
 import Search from 'views/Search';
 import Login from 'views/auth/Login';
 import OnBoard from "./views/auth/OnBoard";
+import Register from 'views/auth/Register';
 
 import {authCheck} from "./services/api/member";
 import {Alert, Stack} from "@mui/material";
@@ -41,6 +42,7 @@ function App() {
                     <Route path="/onboard" element={<OnBoard/>} />
                     <Route path="/login" element={<Login/>}/>
                     <Route path="/search" element={<Search/>}/>
+                    <Route path="/register" element={<Register/>}/>
                 </Routes>
             </div>
             <div>
