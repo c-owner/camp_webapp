@@ -20,6 +20,16 @@
 - **캠퍼들 간의 소통**
 
 
+### Skills
+: React
+
+: Naver Map Api
+
+: 
+
+---
+
+
 **기여자(2)**
 <ul class="list-style-none ">
     <li class="mb-2 d-flex" data-test-selector="grid-mode-element">
