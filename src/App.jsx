@@ -13,7 +13,7 @@ import {Alert, Stack} from "@mui/material";
 
 const check = authCheck("/auth").then(res => {
     if (res.data.status === 200) {
-        return true;
+        return App();
     } else {
         return (
             <>
