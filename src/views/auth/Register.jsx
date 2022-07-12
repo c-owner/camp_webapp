@@ -4,18 +4,18 @@ const Register = () => {
   return (
     <div>
       <div className='register-input r-email'>
-        <TextField></TextField>
+        <TextField variant="standard"></TextField>
       </div>
       <div className='register-input r-pw'>
-        <TextField></TextField>
+        <TextField variant="standard"></TextField>
       </div>
       <div className='register-input r-name'>
-        <TextField></TextField>
+        <TextField variant="standard"></TextField>
       </div>
       <div className='register-input r-gender'>
-        <TextField></TextField>
+        <TextField variant="standard"></TextField>
       </div>
-      <Button onClick=''>회원가입</Button>
+      <Button variant="contained" color="primary" onClick=''>회원가입</Button>
     </div>
   )
 }
