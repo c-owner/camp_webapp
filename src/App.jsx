@@ -7,6 +7,7 @@ import Search from 'views/Search';
 import Login from 'views/auth/Login';
 import OnBoard from "./views/auth/OnBoard";
 import Register from 'views/auth/Register';
+import Normal from 'views/auth/Normal';
 
 import {authCheck} from "./services/api/member";
 import {Alert, Stack} from "@mui/material";
@@ -39,10 +40,11 @@ function App() {
             <div id="body" className="camp-app-body">
                 <Routes>
                     <Route path="/" element={<Main/>}/>
-                    <Route path="/onboard" element={<OnBoard/>} />
+                    <Route path="/onboard" element={<OnBoard />} />
                     <Route path="/login" element={<Login/>}/>
                     <Route path="/search" element={<Search/>}/>
                     <Route path="/register" element={<Register/>}/>
+                    <Route path="/register/noraml" element={<Normal/>}/>
                 </Routes>
             </div>
             <div>
