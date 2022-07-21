@@ -1,3 +1,10 @@
-body {
-  background-color: $main-color;
+body, .camp-app-body {
+    background-color: $main-color;
+}
+
+h1 {
+    color: $color-main;
+    font-size: $font-size-title;
+    font-family: $Barunpen;
+    font-weight: $font-bold;
 }

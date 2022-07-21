@@ -1,0 +1,31 @@
+/**************
+    * Auth
+***************/
+
+/* Register */
+.register-container {
+  padding: 16px;
+}
+
+.register_step1 {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    .register_step1_wrap {
+        padding-top: 58px;
+        .flex-center {
+            margin-bottom: 19px;
+            cursor: pointer;
+        }
+        img {
+            width: 53px;
+            height: 53px;
+            margin-right: 31px;
+        }
+        .register_message {
+            min-width: 130px;
+            font-size: $font-size-root;
+            font-weight: $font-regular;
+        }
+    }
+}

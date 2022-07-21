@@ -9,36 +9,51 @@ import OnBoard from "./views/auth/OnBoard";
 
 import {authCheck} from "./services/api/member";
 import {Alert, Stack} from "@mui/material";
+import Register from "./views/auth/Register";
 
 const check = authCheck("/auth").then(res => {
     if (res.data.status === 200) {
         return App();
     } else {
-        return (
-            <>
-                <Stack sx={{ width: '100%' }} spacing={1}>
-                    <Alert severit  y="warning">로그인이 필요합니다.</Alert>
-                </Stack>
-            </>
-        )
-        return false;
+        return Auth();
     }
 }).catch((err) => {
     console.log("err", err);
 });
 
-function App() {
+const Auth = () => {
     return (
         <div className="App">
+            <div id="body" className="camp-app-body">
+                <Routes>
+                    <Route path="/" element={<Main/>}/>
+                    <Route path="/onboard" element={<OnBoard/>} />
+                    <Route path="/register" element={<Register/>} />
+                    <Route path="/login" element={<Login/>}/>
+                </Routes>
+            </div>
+        </div>
+    )
+}
 
+const App = () => {
+    if (check) {
+        return (
+            Auth()
+        );
+    }
+
+    return (
+        <div className="App">
             <div>
-                { <Header/>}
+                { <Header />}
             </div>
 
             <div id="body" className="camp-app-body">
                 <Routes>
                     <Route path="/" element={<Main/>}/>
                     <Route path="/onboard" element={<OnBoard/>} />
+                    <Route path="/register" element={<Register/>} />
                     <Route path="/login" element={<Login/>}/>
                     <Route path="/search" element={<Search/>}/>
                 </Routes>
