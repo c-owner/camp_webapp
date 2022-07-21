@@ -10,6 +10,7 @@ import OnBoard from "./views/auth/OnBoard";
 import {authCheck} from "./services/api/member";
 import {Alert, Stack} from "@mui/material";
 import Register from "./views/auth/Register";
+import UndoIcon from "@mui/icons-material/Undo";
 
 const check = authCheck("/auth").then(res => {
     if (res.data.status === 200) {
@@ -26,7 +27,6 @@ const Auth = () => {
         <div className="App">
             <div id="body" className="camp-app-body">
                 <Routes>
-                    <Route path="/" element={<Main/>}/>
                     <Route path="/onboard" element={<OnBoard/>} />
                     <Route path="/register" element={<Register/>} />
                     <Route path="/login" element={<Login/>}/>

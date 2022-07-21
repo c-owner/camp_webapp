@@ -1,6 +1,7 @@
 import {authCheck, login} from 'services/api/member.js';
 import {Button, TextField} from "@mui/material";
 import {useNavigate} from "react-router-dom";
+import UndoIcon from "@mui/icons-material/Undo";
 
 let id = '';
 let password = '';
@@ -33,13 +34,21 @@ const Login = () => {
     const navigate = useNavigate();
 
     return (
-        <div id="login-container">
-            <h1>Login</h1>
-            <Button onClick={getCheck}>Check</Button>
-            <div id="login_wrap">
-                <TextField id="user_id" label="아이디" variant="standard" defaultValue={id}/>
-                <TextField id="user_password" label="비밀번호" variant="standard" defaultValue={password}/>
-                <Button onClick={loginSubmit} variant="contained" color="primary">로그인</Button>
+        <div className="auth-container">
+            <div className="auth_header">
+                <UndoIcon className="cursor" onClick={() => {
+                    window.history.back();
+                }}/>
+            </div>
+            <div className="login-container">
+
+                <h1>Login</h1>
+                <Button onClick={getCheck}>Check</Button>
+                <div id="login_wrap">
+                    <TextField id="user_id" label="아이디" variant="standard" defaultValue={id}/>
+                    <TextField id="user_password" label="비밀번호" variant="standard" defaultValue={password}/>
+                    <Button onClick={loginSubmit} variant="contained" color="primary">로그인</Button>
+                </div>
             </div>
         </div>
     )
