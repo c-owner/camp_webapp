@@ -16,6 +16,12 @@ const social_apple = require('assets/image/icons/social_apple.png');
 const social_google = require('assets/image/icons/social_google.png');
 const normal_img = require('assets/image/icons/normal_login.png');
 
+let step = 1;
+const nextStep = () => {
+    step++;
+    console.log(step)
+}
+
 const Register = () => {
 
     return (
@@ -51,8 +57,8 @@ const Register = () => {
                             <img src={social_google} alt="google"/>
                             <div className="register_message">구글로 가입할래요!</div>
                         </div>
-                        <div className="flex-center">
-                            <img src={normal_img} alt="normal"/>
+                        <div className="flex-center" onClick={nextStep} >
+                            <img src={normal_img} alt="normal" />
                             <div className="register_message">일반 회원 가입할래요!</div>
                         </div>
                     </div>
