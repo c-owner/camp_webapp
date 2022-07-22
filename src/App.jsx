@@ -27,7 +27,7 @@ const Auth = () => {
         <div className="App">
             <div id="body" className="camp-app-body">
                 <Routes>
-                    <Route path="/onboard" element={<OnBoard/>} />
+                    <Route path="/" element={<OnBoard/>} />
                     <Route path="/register" element={<Register/>} />
                     <Route path="/login" element={<Login/>}/>
                 </Routes>
