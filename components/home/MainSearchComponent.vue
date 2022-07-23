@@ -60,7 +60,6 @@ export default {
       return this.searchTitle = '아직 검색기능은 존재하지 않아요😅'
     },
     moveScroll() {
-      // $('html, body').stop().animate( { scrollTop : 1500 } )
       window.scrollTo(0,1500);
     },
   },

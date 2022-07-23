@@ -1,7 +1,6 @@
 import Vue from 'vue';
 import SimpleVueValidation from 'simple-vue-validator';
 import {maxLength, minLength} from "simple-vue-validator/src/templates";
-import {resolve} from "chart.js/helpers";
 const Validator = SimpleVueValidation.Validator;
 
 Vue.use(SimpleVueValidation);

@@ -3,7 +3,7 @@ export default {
     target: 'static',
 
     head: {
-        title: '모닥불',
+        title: '캠핑친구24',
         htmlAttrs: {
             lang: 'ko'
         },
@@ -21,7 +21,6 @@ export default {
             {rel: 'stylesheet', href: 'https://unpkg.com/cloudinary-video-player@1.5.9/dist/cld-video-player.min.css'}
         ],
         script: [
-            {type: 'text/javascript', src: '/jquery-3.6.0.min.js'},
             {type: 'text/javascript', src: 'https://unpkg.com/phosphor-icons'},
             {src: 'https://unpkg.com/cloudinary-core@latest/cloudinary-core-shrinkwrap.min.js'},
             {src: 'https://unpkg.com/cloudinary-video-player@1.5.9/dist/cld-video-player.min.js'}
