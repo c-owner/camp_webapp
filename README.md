@@ -30,7 +30,7 @@
 ---
 
 
-**기여자(2)**
+
 <ul class="list-style-none ">
     <li class="mb-2 d-flex" data-test-selector="grid-mode-element">
       <a href="https://github.com/Eight-Corner" class="mr-2" data-hovercard-type="user" data-hovercard-url="/users/Eight-Corner/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self">
@@ -43,6 +43,7 @@
         </a>
 </span>    </li>
     <!--
+ **기여자(2)**
     <li class="mb-2 d-flex" data-test-selector="grid-mode-element">
       <a href="https://github.com/tjwns3481" class="mr-2" data-hovercard-type="user" data-hovercard-url="/users/tjwns3481/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self">
         <img src="https://avatars.githubusercontent.com/u/65941314?s=64&amp;v=4" alt="@tjwns3481" size="32" height="32" width="32" data-view-component="true" class="avatar circle">
