@@ -42,6 +42,7 @@
           <span class="color-fg-muted">Corner</span>
         </a>
 </span>    </li>
+    <!--
     <li class="mb-2 d-flex" data-test-selector="grid-mode-element">
       <a href="https://github.com/tjwns3481" class="mr-2" data-hovercard-type="user" data-hovercard-url="/users/tjwns3481/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self">
         <img src="https://avatars.githubusercontent.com/u/65941314?s=64&amp;v=4" alt="@tjwns3481" size="32" height="32" width="32" data-view-component="true" class="avatar circle">
@@ -52,6 +53,7 @@
           <span class="color-fg-muted">SeoJun Kim</span>
         </a>
 </span>    </li>
+    -->
 </ul>
 
 
